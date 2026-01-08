@@ -3,17 +3,28 @@ using UnityEngine;
 public class RelationshipTrackerUI : MonoBehaviour
 {
     [Header("Wiring")]
-    [SerializeField] private RectTransform leftPoint;
-    [SerializeField] private RectTransform rightPoint;
-    [SerializeField] private RectTransform heart;
+    [SerializeField]
+    private RectTransform leftPoint;
+
+    [SerializeField]
+    private RectTransform rightPoint;
+
+    [SerializeField]
+    private RectTransform heart;
 
     [Header("Value Range")]
-    [SerializeField] private float minValue = -100f;
-    [SerializeField] private float maxValue = 100f;
+    [SerializeField]
+    private float minValue = -100f;
+
+    [SerializeField]
+    private float maxValue = 100f;
 
     [Header("Motion")]
-    [SerializeField] private bool smoothMove = true;
-    [SerializeField] private float smoothSpeed = 12f;
+    [SerializeField]
+    private bool smoothMove = true;
+
+    [SerializeField]
+    private float smoothSpeed = 12f;
 
     [Header("Testing")]
     public bool useTestValue = true;
@@ -36,10 +47,15 @@ public class RelationshipTrackerUI : MonoBehaviour
             SetRelationship(testRelationshipValue);
         }
 
-        if (!smoothMove) return;
+        if (!smoothMove)
+            return;
 
         float current = GetCurrentValueFromHeart();
-        float next = Mathf.Lerp(current, targetValue, 1f - Mathf.Exp(-smoothSpeed * Time.unscaledDeltaTime));
+        float next = Mathf.Lerp(
+            current,
+            targetValue,
+            1f - Mathf.Exp(-smoothSpeed * Time.unscaledDeltaTime)
+        );
         UpdateHeartInstant(next);
     }
 
@@ -63,7 +79,8 @@ public class RelationshipTrackerUI : MonoBehaviour
         Vector3 b = rightPoint.position;
 
         float lineLen = Vector3.Distance(a, b);
-        if (lineLen <= 0.0001f) return targetValue;
+        if (lineLen <= 0.0001f)
+            return targetValue;
 
         float heartLen = Vector3.Distance(a, heart.position);
         float t = Mathf.Clamp01(heartLen / lineLen);
