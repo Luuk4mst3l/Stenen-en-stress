@@ -210,7 +210,7 @@ MonoBehaviour:
   smoothMove: 1
   smoothSpeed: 12
   useTestValue: 1
-  testRelationshipValue: 2
+  testRelationshipValue: 2.2
 --- !u!1 &6652821350572827771
 GameObject:
   m_ObjectHideFlags: 0
