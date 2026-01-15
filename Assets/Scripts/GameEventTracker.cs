@@ -23,6 +23,9 @@ public class GameEventTracker : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPanel;
 
+    [SerializeField]
+    private GameEvent gameEvent;
+
     InputAction pauseAction;
 
 
@@ -66,6 +69,10 @@ public class GameEventTracker : MonoBehaviour
                 Debug.Log("game over");
                 EndLevel();
                 isLevelRunning = false;
+            }
+
+            if (elapsedTime >= (levelDuration / 3 )) {
+                gameEvent.onEventTriggered.Invoke();
             }
         }
     }
