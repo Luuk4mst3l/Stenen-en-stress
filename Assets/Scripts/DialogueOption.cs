@@ -14,4 +14,9 @@ public class DialogueOption
     public int goldChange;
 
     public UnityEvent onOptionSelected;
+
+    private void hello()
+  {
+    // Debug.Log("Hello from DialogueOption!");
+  }
 }

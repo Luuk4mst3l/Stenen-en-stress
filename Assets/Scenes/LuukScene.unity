@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 78031721}
   - component: {fileID: 78031723}
   - component: {fileID: 78031724}
+  - component: {fileID: 78031725}
   m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
@@ -189,11 +190,24 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &78031725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78031720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61abde96eee45d24d9c81366583906cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FillGradientSync
+  image: {fileID: 78031724}
 --- !u!1 &117131431
 GameObject:
   m_ObjectHideFlags: 0
@@ -7423,7 +7437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &611336012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7673,6 +7687,8 @@ MonoBehaviour:
   pausePanel: {fileID: 1240006918}
   gameOverPanel: {fileID: 611336011}
   gameEvent: {fileID: 11400000, guid: 5d88c4ffcf327f448b7864d662dd22b9, type: 2}
+  dialogueManager: {fileID: 0}
+  timedDialogues: []
 --- !u!224 &1014102062
 RectTransform:
   m_ObjectHideFlags: 0

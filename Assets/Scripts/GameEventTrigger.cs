@@ -27,7 +27,7 @@ public class GameEventTrigger : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         // Assuming DialogueManager is accessible
-        DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
+        DialogueManager dialogueManager = FindFirstObjectByType<DialogueManager>();
         if (dialogueManager != null)
         {
             dialogueManager.ShowDialogue(option);
