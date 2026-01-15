@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class GameEventTracker : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class GameEventTracker : MonoBehaviour
 
     [SerializeField]
     private GameEvent gameEvent;
+
+    [SerializeField] private DialogueManager dialogueManager; // Add this
+    [SerializeField] private List<TimedDialogue> timedDialogues; // Add this list
 
     InputAction pauseAction;
 
@@ -69,6 +73,16 @@ public class GameEventTracker : MonoBehaviour
                 Debug.Log("game over");
                 EndLevel();
                 isLevelRunning = false;
+            }
+
+            // Check for timed dialogues
+            foreach (var timedDialogue in timedDialogues)
+            {
+                if (!timedDialogue.hasTriggered && elapsedTime >= timedDialogue.triggerTime)
+                {
+                    dialogueManager.ShowDialogue(timedDialogue.dialogueOption);
+                    timedDialogue.hasTriggered = true;
+                }
             }
 
             if (elapsedTime >= (levelDuration / 3 )) {
