@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class GameEventTracker : MonoBehaviour
 {
@@ -23,14 +23,11 @@ public class GameEventTracker : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPanel;
 
-    InputAction pauseAction;
-
-
     private bool isLevelRunning = false;
     private float elapsedTime = 0f;
 
     private void Start()
-    {   
+    {
         startPanel.SetActive(true);
         pausePanel.SetActive(false);
         gameOverPanel.SetActive(false);
@@ -87,7 +84,7 @@ public class GameEventTracker : MonoBehaviour
     }
 
     private void EndLevel()
-    {   
+    {
         isLevelRunning = false;
         mainBuildingTimer.SetActive(false);
         gameOverPanel.SetActive(true);
@@ -97,7 +94,7 @@ public class GameEventTracker : MonoBehaviour
     }
 
     void CheckValues()
-    {   
+    {
         Debug.Log("Checking values...");
         // Check voor relationship statuses en bouw requirements
     }
