@@ -1,0 +1,351 @@
+{
+  "level": 3,
+  "popupDelaySeconds": 15,
+  "events": [
+    {
+      "id": "L3-E01",
+      "titel": "Fundering",
+      "description": "De grond blijkt lastiger. Je moet een keuze maken.",
+      "options": [
+        {
+          "id": "L3-E01-A",
+          "description": "Kies voor kwaliteit, dan heb je later minder gezeur.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "investor",
+          "waarde2": -6
+        },
+        {
+          "id": "L3-E01-B",
+          "description": "Hou het simpel en let op de kosten.",
+          "partij1": "investor",
+          "waarde1": 4,
+          "partij2": "budget",
+          "waarde2": -1
+        }
+      ]
+    },
+    {
+      "id": "L3-E02",
+      "titel": "Hout vs steen",
+      "description": "Je twijfelt opnieuw over hout/steen door nieuwe prijzen.",
+      "options": [
+        {
+          "id": "L3-E02-A",
+          "description": "Ga voor de nette oplossing, ook al kost het wat.",
+          "partij1": "investor",
+          "waarde1": 3,
+          "partij2": "budget",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E02-B",
+          "description": "Neem een gok om geld te besparen.",
+          "partij1": "budget",
+          "waarde1": 6,
+          "partij2": "investor",
+          "waarde2": -1
+        }
+      ]
+    },
+    {
+      "id": "L3-E03",
+      "titel": "Groen dak",
+      "description": "Een groen dak is goed voor wateropvang en koelte.",
+      "options": [
+        {
+          "id": "L3-E03-A",
+          "description": "Leg een groen dak aan (wateropvang).",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -5
+        },
+        {
+          "id": "L3-E03-B",
+          "description": "Gewoon dak, geen extra onderhoud.",
+          "partij1": "budget",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L3-E04",
+      "titel": "Laadpalen",
+      "description": "Wil je laadpalen plaatsen op de parkeerplek?",
+      "options": [
+        {
+          "id": "L3-E04-A",
+          "description": "Plaats laadpalen op de parkeerplek.",
+          "partij1": "budget",
+          "waarde1": 5,
+          "partij2": "investor",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E04-B",
+          "description": "Alleen voorbereiden, later pas plaatsen.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -6
+        }
+      ]
+    },
+    {
+      "id": "L3-E05",
+      "titel": "Fietsenstalling",
+      "description": "Meer fietsenstalling betekent minder parkeerplek.",
+      "options": [
+        {
+          "id": "L3-E05-A",
+          "description": "Meer fietsenstalling, minder auto's.",
+          "partij1": "groene",
+          "waarde1": 4,
+          "partij2": "budget",
+          "waarde2": -1
+        },
+        {
+          "id": "L3-E05-B",
+          "description": "Meer parkeerplek, fietsen doen we minimaal.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "groene",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L3-E06",
+      "titel": "Speelplek",
+      "description": "Een speelplek is leuk, maar neemt ruimte in.",
+      "options": [
+        {
+          "id": "L3-E06-A",
+          "description": "Pak het grondig aan. Liever nu goed dan straks spijt.",
+          "partij1": "investor",
+          "waarde1": 6,
+          "partij2": "groene",
+          "waarde2": -2
+        },
+        {
+          "id": "L3-E06-B",
+          "description": "Doe het basic, anders lopen we uit.",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "investor",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L3-E07",
+      "titel": "Verlichting",
+      "description": "Buitenverlichting: veilig of juist natuurvriendelijk?",
+      "options": [
+        {
+          "id": "L3-E07-A",
+          "description": "Doe het groener, dat is beter op lange termijn.",
+          "partij1": "budget",
+          "waarde1": 5,
+          "partij2": "groene",
+          "waarde2": -1
+        },
+        {
+          "id": "L3-E07-B",
+          "description": "Snel opleveren is nu het belangrijkste.",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -5
+        }
+      ]
+    },
+    {
+      "id": "L3-E08",
+      "titel": "Water",
+      "description": "Afwatering en regenwater: simpel of slim?",
+      "options": [
+        {
+          "id": "L3-E08-A",
+          "description": "Neem de veilige route, geen gedoe op de bouw.",
+          "partij1": "budget",
+          "waarde1": 5,
+          "partij2": "groene",
+          "waarde2": -3
+        },
+        {
+          "id": "L3-E08-B",
+          "description": "Hou het simpel en let op de kosten.",
+          "partij1": "groene",
+          "waarde1": 3,
+          "partij2": "budget",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L3-E09",
+      "titel": "Schutting",
+      "description": "Schuttingen: strak en goedkoop of groen en netjes?",
+      "options": [
+        {
+          "id": "L3-E09-A",
+          "description": "Ga voor de nette oplossing, ook al kost het wat.",
+          "partij1": "groene",
+          "waarde1": 4,
+          "partij2": "budget",
+          "waarde2": -5
+        },
+        {
+          "id": "L3-E09-B",
+          "description": "Neem de goedkope optie, we moeten binnen budget blijven.",
+          "partij1": "budget",
+          "waarde1": 6,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L3-E10",
+      "titel": "Communicatie",
+      "description": "Je moet een keuze maken over hoe open je communiceert.",
+      "options": [
+        {
+          "id": "L3-E10-A",
+          "description": "Los het meteen op, dan blijft het project netjes.",
+          "partij1": "investor",
+          "waarde1": 4,
+          "partij2": "groene",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E10-B",
+          "description": "Laat het zoals het is en ga door.",
+          "partij1": "groene",
+          "waarde1": 3,
+          "partij2": "investor",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L3-E11",
+      "titel": "Extra woningen",
+      "description": "Je kunt extra woningen toevoegen, maar het wordt krapper.",
+      "options": [
+        {
+          "id": "L3-E11-A",
+          "description": "Ga voor de nette oplossing, ook al kost het wat.",
+          "partij1": "budget",
+          "waarde1": 2,
+          "partij2": "groene",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E11-B",
+          "description": "Kies voor tempo. We fixen details later wel.",
+          "partij1": "groene",
+          "waarde1": 6,
+          "partij2": "budget",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L3-E12",
+      "titel": "Kwaliteitscheck",
+      "description": "Je ontdekt slordig werk. Fix je het nu of later?",
+      "options": [
+        {
+          "id": "L3-E12-A",
+          "description": "Pak het grondig aan. Liever nu goed dan straks spijt.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "investor",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E12-B",
+          "description": "Kies voor tempo. We fixen details later wel.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L3-E13",
+      "titel": "Veiligheid",
+      "description": "Extra veiligheidsmaatregelen kosten tijd en geld.",
+      "options": [
+        {
+          "id": "L3-E13-A",
+          "description": "Neem de veilige route, geen gedoe op de bouw.",
+          "partij1": "groene",
+          "waarde1": 4,
+          "partij2": "budget",
+          "waarde2": -2
+        },
+        {
+          "id": "L3-E13-B",
+          "description": "Snel opleveren is nu het belangrijkste.",
+          "partij1": "budget",
+          "waarde1": 6,
+          "partij2": "groene",
+          "waarde2": -6
+        }
+      ]
+    },
+    {
+      "id": "L3-E14",
+      "titel": "Subsidie",
+      "description": "Er is een subsidie, maar aanvragen kost papierwerk.",
+      "options": [
+        {
+          "id": "L3-E14-A",
+          "description": "Pak het grondig aan. Liever nu goed dan straks spijt.",
+          "partij1": "budget",
+          "waarde1": 2,
+          "partij2": "investor",
+          "waarde2": -4
+        },
+        {
+          "id": "L3-E14-B",
+          "description": "Hou het simpel en let op de kosten.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -6
+        }
+      ]
+    },
+    {
+      "id": "L3-E15",
+      "titel": "Prijsstijging",
+      "description": "Materialen worden duurder. Je moet ergens snijden.",
+      "options": [
+        {
+          "id": "L3-E15-A",
+          "description": "Kies voor kwaliteit, dan heb je later minder gezeur.",
+          "partij1": "investor",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": -2
+        },
+        {
+          "id": "L3-E15-B",
+          "description": "Neem de goedkope optie, we moeten binnen budget blijven.",
+          "partij1": "groene",
+          "waarde1": 6,
+          "partij2": "investor",
+          "waarde2": -2
+        }
+      ]
+    }
+  ]
+}

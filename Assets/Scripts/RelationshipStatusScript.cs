@@ -29,8 +29,6 @@ public class RelationshipTrackerUI : MonoBehaviour
     [Header("Testing")]
     public bool useTestValue = true;
 
-    [Range(-100f, 100f)]
-    public float testRelationshipValue = 0f;
 
     private float targetValue;
 
@@ -42,10 +40,6 @@ public class RelationshipTrackerUI : MonoBehaviour
 
     private void Update()
     {
-        if (useTestValue)
-        {
-            SetRelationship(testRelationshipValue);
-        }
 
         if (!smoothMove)
             return;

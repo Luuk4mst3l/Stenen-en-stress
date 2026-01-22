@@ -1,0 +1,236 @@
+{
+  "level": 2,
+  "popupDelaySeconds": 15,
+  "events": [
+    {
+      "id": "L2-E01",
+      "titel": "Isolatie",
+      "description": "Je kunt extra isolatie doen, maar dat tikt aan in kosten.",
+      "options": [
+        {
+          "id": "L2-E01-A",
+          "description": "Doe extra isolatie nu, scheelt later gedoe.",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -6
+        },
+        {
+          "id": "L2-E01-B",
+          "description": "Standaard isolatie, we moeten op budget letten.",
+          "partij1": "budget",
+          "waarde1": 6,
+          "partij2": "groene",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L2-E02",
+      "titel": "Buurtavond",
+      "description": "De buurt vraagt om uitleg en inspraak.",
+      "options": [
+        {
+          "id": "L2-E02-A",
+          "description": "Organiseer een buurtavond en leg alles uit.",
+          "partij1": "groene",
+          "waarde1": 5,
+          "partij2": "budget",
+          "waarde2": -1
+        },
+        {
+          "id": "L2-E02-B",
+          "description": "Stuur een korte update en ga door met bouwen.",
+          "partij1": "budget",
+          "waarde1": 5,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L2-E03",
+      "titel": "Dak",
+      "description": "Je moet een dakkeuze maken.",
+      "options": [
+        {
+          "id": "L2-E03-A",
+          "description": "Kies voor een duurzamer dak met betere isolatie.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "investor",
+          "waarde2": -4
+        },
+        {
+          "id": "L2-E03-B",
+          "description": "Kies standaard dakbedekking, scheelt kosten.",
+          "partij1": "investor",
+          "waarde1": 3,
+          "partij2": "budget",
+          "waarde2": -5
+        }
+      ]
+    },
+    {
+      "id": "L2-E04",
+      "titel": "Planning",
+      "description": "De planning staat onder druk. Wat doe je?",
+      "options": [
+        {
+          "id": "L2-E04-A",
+          "description": "Pak het grondig aan. Liever nu goed dan straks spijt.",
+          "partij1": "groene",
+          "waarde1": 3,
+          "partij2": "budget",
+          "waarde2": -2
+        },
+        {
+          "id": "L2-E04-B",
+          "description": "Kies voor tempo. We fixen details later wel.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "groene",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L2-E05",
+      "titel": "Aannemer",
+      "description": "Je kunt een duurdere aannemer nemen die sneller werkt.",
+      "options": [
+        {
+          "id": "L2-E05-A",
+          "description": "Kies voor kwaliteit, dan heb je later minder gezeur.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -5
+        },
+        {
+          "id": "L2-E05-B",
+          "description": "Neem de goedkope optie, we moeten binnen budget blijven.",
+          "partij1": "budget",
+          "waarde1": 5,
+          "partij2": "investor",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L2-E06",
+      "titel": "Afval",
+      "description": "Bouwafval stapelt zich op. Regel je het netjes of goedkoop?",
+      "options": [
+        {
+          "id": "L2-E06-A",
+          "description": "Neem de veilige route, geen gedoe op de bouw.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "groene",
+          "waarde2": -5
+        },
+        {
+          "id": "L2-E06-B",
+          "description": "Laat het zoals het is en ga door.",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -1
+        }
+      ]
+    },
+    {
+      "id": "L2-E07",
+      "titel": "Geluid",
+      "description": "Er komen klachten over geluid van de bouwplaats.",
+      "options": [
+        {
+          "id": "L2-E07-A",
+          "description": "Los het meteen op, dan blijft het project netjes.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "groene",
+          "waarde2": -6
+        },
+        {
+          "id": "L2-E07-B",
+          "description": "Doe het basic, anders lopen we uit.",
+          "partij1": "groene",
+          "waarde1": 6,
+          "partij2": "investor",
+          "waarde2": -5
+        }
+      ]
+    },
+    {
+      "id": "L2-E08",
+      "titel": "Zonnepanelen",
+      "description": "Wil je zonnepanelen meteen meenemen?",
+      "options": [
+        {
+          "id": "L2-E08-A",
+          "description": "Neem zonnepanelen meteen mee in het plan.",
+          "partij1": "groene",
+          "waarde1": 5,
+          "partij2": "investor",
+          "waarde2": -6
+        },
+        {
+          "id": "L2-E08-B",
+          "description": "Laat het optioneel, bewoners beslissen later.",
+          "partij1": "investor",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": -1
+        }
+      ]
+    },
+    {
+      "id": "L2-E09",
+      "titel": "Warmtepomp",
+      "description": "Warmtepomp of toch een goedkopere oplossing?",
+      "options": [
+        {
+          "id": "L2-E09-A",
+          "description": "Warmtepomp plaatsen, toekomstproof.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "groene",
+          "waarde2": -5
+        },
+        {
+          "id": "L2-E09-B",
+          "description": "Goedkopere oplossing kiezen, nu vooral betaalbaar.",
+          "partij1": "groene",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L2-E10",
+      "titel": "Ventilatie",
+      "description": "Extra ventilatie is gezonder, maar kost meer.",
+      "options": [
+        {
+          "id": "L2-E10-A",
+          "description": "Pak het grondig aan. Liever nu goed dan straks spijt.",
+          "partij1": "investor",
+          "waarde1": 2,
+          "partij2": "budget",
+          "waarde2": -6
+        },
+        {
+          "id": "L2-E10-B",
+          "description": "Kies voor tempo. We fixen details later wel.",
+          "partij1": "budget",
+          "waarde1": 4,
+          "partij2": "investor",
+          "waarde2": -2
+        }
+      ]
+    }
+  ]
+}

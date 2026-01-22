@@ -1,0 +1,231 @@
+{
+  "level": 5,
+  "popupDelaySeconds": 15,
+  "events": [
+    {
+      "id": "L5-E01",
+      "titel": "Grote uitbreiding",
+      "description": "Je project wordt groter dan gepland. Je moet kiezen waar je de focus legt.",
+      "options": [
+        { "id": "L5-E01-A", "description": "Focus op duurzaamheid, ook al kost het meer.", "partij1": "groene", "waarde1": 5, "partij2": "budget", "waarde2": -5 },
+        { "id": "L5-E01-B", "description": "Focus op zoveel mogelijk woningen en opbrengst.", "partij1": "investor", "waarde1": 5, "partij2": "groene", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E02",
+      "titel": "Muren: topkwaliteit of standaard",
+      "description": "Je kan nu kiezen voor echt topmateriaal voor de muren, of standaard houden.",
+      "options": [
+        { "id": "L5-E02-A", "description": "Topkwaliteit materiaal, lange levensduur.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -5 },
+        { "id": "L5-E02-B", "description": "Standaard materiaal, scheelt een hoop geld.", "partij1": "budget", "waarde1": 5, "partij2": "groene", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E03",
+      "titel": "Tuin: parkje maken",
+      "description": "Er is ruimte voor een klein parkje. Mooi voor de buurt, minder ruimte voor bouwen.",
+      "options": [
+        { "id": "L5-E03-A", "description": "Parkje maken met bomen en bankjes.", "partij1": "groene", "waarde1": 5, "partij2": "investor", "waarde2": -3 },
+        { "id": "L5-E03-B", "description": "Geen park, ruimte gebruiken voor extra woningen.", "partij1": "investor", "waarde1": 5, "partij2": "groene", "waarde2": -5 }
+      ]
+    },
+    {
+      "id": "L5-E04",
+      "titel": "Oprit: slimme inrichting",
+      "description": "Je kan de oprit slim inrichten met fietsplekken en minder auto’s, of traditioneel houden.",
+      "options": [
+        { "id": "L5-E04-A", "description": "Meer fietsen, minder auto’s, netter voor de wijk.", "partij1": "groene", "waarde1": 4, "partij2": "investor", "waarde2": -2 },
+        { "id": "L5-E04-B", "description": "Veel parkeerplekken, iedereen blij die een auto heeft.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E05",
+      "titel": "Kosten stijgen overal",
+      "description": "Materialen zijn duurder geworden. Je moet snel beslissen wat je schrapt.",
+      "options": [
+        { "id": "L5-E05-A", "description": "Groene keuzes iets terugschroeven om budget te redden.", "partij1": "budget", "waarde1": 5, "partij2": "groene", "waarde2": -5 },
+        { "id": "L5-E05-B", "description": "Extra investering zoeken en kwaliteit houden.", "partij1": "investor", "waarde1": 4, "partij2": "budget", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E06",
+      "titel": "Klachten stapelen op",
+      "description": "De buurt klaagt over alles: geluid, verkeer, rommel. Je kan het serieus nemen of negeren.",
+      "options": [
+        { "id": "L5-E06-A", "description": "Extra maatregelen nemen om de buurt rustig te houden.", "partij1": "groene", "waarde1": 3, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E06-B", "description": "Negeer het, anders blijf je bezig.", "partij1": "investor", "waarde1": 4, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E07",
+      "titel": "Extra inspectie verplicht",
+      "description": "Door de grootte van het project komt er een extra inspectie aan. Dat kost tijd.",
+      "options": [
+        { "id": "L5-E07-A", "description": "Alles netjes voorbereiden, geen risico nemen.", "partij1": "groene", "waarde1": 3, "partij2": "investor", "waarde2": -2 },
+        { "id": "L5-E07-B", "description": "Minimaal voorbereiden, hopen dat het goed gaat.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E08",
+      "titel": "Levering vertraagd",
+      "description": "Belangrijk materiaal komt te laat. Je kan een dure noodoplossing regelen.",
+      "options": [
+        { "id": "L5-E08-A", "description": "Dure noodlevering regelen om door te kunnen.", "partij1": "investor", "waarde1": 4, "partij2": "budget", "waarde2": -5 },
+        { "id": "L5-E08-B", "description": "Wachten, maar dat schuift alles op.", "partij1": "budget", "waarde1": 3, "partij2": "investor", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E09",
+      "titel": "Tuin: onderhoudskosten",
+      "description": "Een grote tuin is mooi, maar onderhoud wordt elk jaar duurder.",
+      "options": [
+        { "id": "L5-E09-A", "description": "Toch doen, leefbaarheid is belangrijk.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E09-B", "description": "Kleiner maken, minder gedoe later.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E10",
+      "titel": "Oprit: asfalt of stenen",
+      "description": "Je moet kiezen tussen goedkoop asfalt of nette stenen die water doorlaten.",
+      "options": [
+        { "id": "L5-E10-A", "description": "Waterdoorlatende stenen, ziet er beter uit.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
+        { "id": "L5-E10-B", "description": "Asfalt, sneller en goedkoper.", "partij1": "budget", "waarde1": 4, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E11",
+      "titel": "Investeerder wil meer winst",
+      "description": "Investeerders willen extra winst. Ze pushen voor goedkopere keuzes.",
+      "options": [
+        { "id": "L5-E11-A", "description": "Meegaan en besparen waar het kan.", "partij1": "investor", "waarde1": 5, "partij2": "groene", "waarde2": -4 },
+        { "id": "L5-E11-B", "description": "Nee zeggen, kwaliteit en leefbaarheid eerst.", "partij1": "groene", "waarde1": 4, "partij2": "investor", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E12",
+      "titel": "Extra groen op daken",
+      "description": "Je kan groene daken plaatsen. Goed voor klimaat en isolatie, maar best duur.",
+      "options": [
+        { "id": "L5-E12-A", "description": "Groene daken plaatsen.", "partij1": "groene", "waarde1": 5, "partij2": "budget", "waarde2": -5 },
+        { "id": "L5-E12-B", "description": "Niet doen, te duur voor nu.", "partij1": "budget", "waarde1": 4, "partij2": "groene", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E13",
+      "titel": "Team raakt overwerkt",
+      "description": "Je team maakt lange dagen. Je kan rust inbouwen of blijven pushen.",
+      "options": [
+        { "id": "L5-E13-A", "description": "Rust inbouwen, minder fouten en stress.", "partij1": "groene", "waarde1": 2, "partij2": "investor", "waarde2": -2 },
+        { "id": "L5-E13-B", "description": "Doorpushen, deadlines zijn belangrijk.", "partij1": "investor", "waarde1": 4, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E14",
+      "titel": "Beveiliging op bouwplaats",
+      "description": "Er is diefstal geweest. Je kan beveiliging inhuren, maar dat kost geld.",
+      "options": [
+        { "id": "L5-E14-A", "description": "Beveiliging inhuren, minder risico.", "partij1": "investor", "waarde1": 2, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E14-B", "description": "Geen extra beveiliging, hopen dat het stopt.", "partij1": "budget", "waarde1": 2, "partij2": "investor", "waarde2": -2 }
+      ]
+    },
+    {
+      "id": "L5-E15",
+      "titel": "Woningen verkopen sneller dan verwacht",
+      "description": "De verkoop gaat hard. Je kan de prijs verhogen of betaalbaar houden.",
+      "options": [
+        { "id": "L5-E15-A", "description": "Prijs verhogen voor meer winst.", "partij1": "investor", "waarde1": 5, "partij2": "groene", "waarde2": -2 },
+        { "id": "L5-E15-B", "description": "Betaalbaar houden voor de buurt.", "partij1": "groene", "waarde1": 3, "partij2": "investor", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E16",
+      "titel": "Extra laadpalen",
+      "description": "Er is veel vraag naar laadpalen. Je kan meer plaatsen dan gepland.",
+      "options": [
+        { "id": "L5-E16-A", "description": "Meer laadpalen plaatsen.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
+        { "id": "L5-E16-B", "description": "Alleen de basis plaatsen.", "partij1": "budget", "waarde1": 2, "partij2": "groene", "waarde2": -1 }
+      ]
+    },
+    {
+      "id": "L5-E17",
+      "titel": "Muren: extra isolatie verplicht",
+      "description": "Er komt een eis binnen: extra isolatie. Je moet kiezen hoe je het oplost.",
+      "options": [
+        { "id": "L5-E17-A", "description": "Beter isoleren en het meteen goed doen.", "partij1": "groene", "waarde1": 5, "partij2": "budget", "waarde2": -4 },
+        { "id": "L5-E17-B", "description": "Goedkoopste oplossing zoeken die nét mag.", "partij1": "budget", "waarde1": 4, "partij2": "groene", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E18",
+      "titel": "Afwerking: luxe of basic",
+      "description": "Je zit aan het einde. Je kan luxe afwerking doen, of basic opleveren.",
+      "options": [
+        { "id": "L5-E18-A", "description": "Luxe afwerking, ziet er top uit.", "partij1": "investor", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
+        { "id": "L5-E18-B", "description": "Basic, maar wel netjes en goedkoper.", "partij1": "budget", "waarde1": 4, "partij2": "investor", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E19",
+      "titel": "Tuin: extra bomen",
+      "description": "Je kan extra bomen planten voor schaduw en uitstraling. Kost geld en tijd.",
+      "options": [
+        { "id": "L5-E19-A", "description": "Extra bomen planten.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E19-B", "description": "Niet doen, tuin simpel houden.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E20",
+      "titel": "Oprit: verlichting",
+      "description": "De oprit heeft verlichting nodig. Je kan kiezen voor slimme zuinige lampen of goedkope lampen.",
+      "options": [
+        { "id": "L5-E20-A", "description": "Slimme, zuinige verlichting.", "partij1": "groene", "waarde1": 3, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E20-B", "description": "Goedkope standaard verlichting.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -2 }
+      ]
+    },
+    {
+      "id": "L5-E21",
+      "titel": "Laatste inspectie: kleine fouten",
+      "description": "Tijdens de laatste inspectie komen kleine fouten naar boven. Je kan het fixen of gokken.",
+      "options": [
+        { "id": "L5-E21-A", "description": "Fixen, dan ben je zeker.", "partij1": "groene", "waarde1": 3, "partij2": "budget", "waarde2": -2 },
+        { "id": "L5-E21-B", "description": "Gokken en opleveren, anders kost het te veel tijd.", "partij1": "investor", "waarde1": 4, "partij2": "groene", "waarde2": -2 }
+      ]
+    },
+    {
+      "id": "L5-E22",
+      "titel": "Buurtactie voor meer groen",
+      "description": "De buurt start een actie voor meer groen. Je kan meegaan of het afkappen.",
+      "options": [
+        { "id": "L5-E22-A", "description": "Meegaan en extra groen toevoegen.", "partij1": "groene", "waarde1": 5, "partij2": "investor", "waarde2": -2 },
+        { "id": "L5-E22-B", "description": "Afkappen, project moet gewoon klaar.", "partij1": "investor", "waarde1": 4, "partij2": "groene", "waarde2": -4 }
+      ]
+    },
+    {
+      "id": "L5-E23",
+      "titel": "Laatste budgetkeuze",
+      "description": "Je hebt nog een laatste budgetkeuze: extra kwaliteit of geld overhouden.",
+      "options": [
+        { "id": "L5-E23-A", "description": "Extra kwaliteit, minder gedoe later.", "partij1": "groene", "waarde1": 3, "partij2": "budget", "waarde2": -3 },
+        { "id": "L5-E23-B", "description": "Geld overhouden, we zijn er bijna.", "partij1": "budget", "waarde1": 4, "partij2": "groene", "waarde2": -3 }
+      ]
+    },
+    {
+      "id": "L5-E24",
+      "titel": "Opleverfeest of niet",
+      "description": "Je kan een oplevermoment organiseren voor bewoners en investeerders, of het gewoon afronden.",
+      "options": [
+        { "id": "L5-E24-A", "description": "Oplevermoment organiseren, goede sfeer en vertrouwen.", "partij1": "investor", "waarde1": 2, "partij2": "budget", "waarde2": -2 },
+        { "id": "L5-E24-B", "description": "Geen gedoe, gewoon klaar en door.", "partij1": "budget", "waarde1": 2, "partij2": "investor", "waarde2": -1 }
+      ]
+    },
+    {
+      "id": "L5-E25",
+      "titel": "Project afronden",
+      "description": "Laatste keuze: ga je voor een nette afronding of lever je zo snel mogelijk op?",
+      "options": [
+        { "id": "L5-E25-A", "description": "Nette afronding, alles strak opleveren.", "partij1": "groene", "waarde1": 3, "partij2": "investor", "waarde2": -2 },
+        { "id": "L5-E25-B", "description": "Zo snel mogelijk opleveren, deadline gehaald.", "partij1": "investor", "waarde1": 5, "partij2": "groene", "waarde2": -3 }
+      ]
+    }
+  ]
+}
