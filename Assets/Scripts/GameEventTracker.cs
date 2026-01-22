@@ -23,6 +23,12 @@ public class GameEventTracker : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPanel;
 
+    [SerializeField]
+    private GameObject notifyStakeholderPrefab;
+
+    [SerializeField]
+    private Transform uiCanvas;
+
     private bool isLevelRunning = false;
     private float elapsedTime = 0f;
 
@@ -65,6 +71,11 @@ public class GameEventTracker : MonoBehaviour
                 isLevelRunning = false;
             }
         }
+    }
+
+    public void SpawnStakeholderPopup()
+    {
+        Instantiate(notifyStakeholderPrefab, uiCanvas);
     }
 
     public void PauseGame()
