@@ -29,7 +29,6 @@ public class RelationshipTrackerUI : MonoBehaviour
     [Header("Testing")]
     public bool useTestValue = true;
 
-
     private float targetValue;
 
     private void Awake()
@@ -40,7 +39,6 @@ public class RelationshipTrackerUI : MonoBehaviour
 
     private void Update()
     {
-
         if (!smoothMove)
             return;
 

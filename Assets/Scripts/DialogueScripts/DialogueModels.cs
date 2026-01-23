@@ -14,6 +14,7 @@ public class DialogueEvent
 {
     public string id;
     public string titel;
+    public int partij;
     public string description;
     public DialogueOption[] options;
 }

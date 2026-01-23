@@ -23,6 +23,15 @@ public class GameEventTracker : MonoBehaviour
     [SerializeField]
     private GameObject gameOverPanel;
 
+    [SerializeField]
+    private NotifyStakeholders stakeholderNotifier;
+
+    [SerializeField]
+    private float initialDialogueDelay = 10f;
+
+    private LevelDialogueData activeDialogueData;
+    private int nextDialogueIndex = 0;
+
     private bool isLevelRunning = false;
     private float elapsedTime = 0f;
 
@@ -56,6 +65,8 @@ public class GameEventTracker : MonoBehaviour
         if (isLevelRunning)
         {
             elapsedTime += Time.fixedDeltaTime;
+            UpdateDialogueIntervals();
+
             levelProgressBar.fillAmount = Mathf.Clamp01(elapsedTime / levelDuration);
 
             if (elapsedTime >= levelDuration)
@@ -64,6 +75,34 @@ public class GameEventTracker : MonoBehaviour
                 EndLevel();
                 isLevelRunning = false;
             }
+        }
+    }
+
+    public void SetActiveDialogue(LevelDialogueData data)
+    {
+        activeDialogueData = data;
+        nextDialogueIndex = 0;
+    }
+
+    private void UpdateDialogueIntervals()
+    {
+        if (!isLevelRunning || activeDialogueData == null)
+            return;
+
+        if (nextDialogueIndex >= activeDialogueData.events.Length)
+            return;
+
+        float unlockTime =
+            initialDialogueDelay + nextDialogueIndex * activeDialogueData.popupDelaySeconds;
+
+        if (elapsedTime >= unlockTime)
+        {
+            Debug.Log(activeDialogueData.events[nextDialogueIndex]);
+            int stakeholderIndex = activeDialogueData.events[nextDialogueIndex].partij;
+
+            stakeholderNotifier.NotifyStakeholder(stakeholderIndex);
+
+            nextDialogueIndex++;
         }
     }
 
