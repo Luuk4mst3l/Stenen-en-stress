@@ -1,84 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class NotifyStakeHolders : MonoBehaviour
+public class NotifyStakeholders : MonoBehaviour
 {
-    [Header("Timing")]
-    [SerializeField]
-    private float timeToRespond = 5f;
+    [SerializeField] private StakeHolders stakeHolder1;
+    [SerializeField] private StakeHolders stakeHolder2;
+    [SerializeField] private StakeHolders stakeHolder3;
+    [SerializeField] private StakeHolders stakeHolder4;
 
-    [SerializeField]
-    private Image timerFill;
 
-    [Header("Stakeholders to Notify")]
-    [SerializeField]
-    private List<StakeHolders> stakeholders = new List<StakeHolders>();
-
-    [Header("Dialogue")]
-    [SerializeField]
-    private DialogueRunner dialogueRunner;
-
-    private float elapsed;
-    private bool resolved;
-
-    private void OnEnable()
+    public void notifyAll()
     {
-        elapsed = 0f;
-        resolved = false;
-        StartCoroutine(ResponseTimer());
+        stakeHolder1?.Signal();
+        stakeHolder2?.Signal();
+        stakeHolder3?.Signal();
+        stakeHolder4?.Signal();
     }
 
-    private IEnumerator ResponseTimer()
+    public void notifyStakeHolder1()
     {
-        while (elapsed < timeToRespond)
-        {
-            elapsed += Time.deltaTime;
-
-            if (timerFill != null)
-                timerFill.fillAmount = 1f - (elapsed / timeToRespond);
-
-            yield return null;
-        }
-
-        if (!resolved)
-            OnTimedOut();
+        stakeHolder1?.Signal();
     }
 
-    // Hook this once to the Button OnClick
-    public void NotifySelectedStakeholders()
+    public void notifyStakeHolder2()
     {
-        if (resolved)
-            return;
-
-        resolved = true;
-
-        foreach (var stakeholder in stakeholders)
-        {
-            stakeholder?.Signal();
-        }
-
-        dialogueRunner?.StartDialogue();
-        ClosePopup();
+        stakeHolder2?.Signal();
     }
 
-    private void OnTimedOut()
+    public void notifyStakeHolder3()
     {
-        Debug.Log("Stakeholder notification timed out");
-        MissedConsequence();
-        ClosePopup();
+        stakeHolder3?.Signal();
     }
 
-    private void MissedConsequence()
+    public void notifyStakeHolder4()
     {
-        // Placeholder – expand later
-        Debug.Log("Apply missed stakeholder consequence here");
+        stakeHolder4?.Signal();
     }
 
-    private void ClosePopup()
-    {
-        StopAllCoroutines();
-        Destroy(gameObject);
-    }
+
+
 }

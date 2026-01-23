@@ -3,11 +3,8 @@ using UnityEngine;
 
 public class MoneyBadgeUI : MonoBehaviour
 {
-    [SerializeField]
-    private PlayerWallet wallet;
-
-    [SerializeField]
-    private TMP_Text moneyText;
+    [SerializeField] private PlayerWallet wallet;
+    [SerializeField] private TMP_Text moneyText;
 
     private void OnEnable()
     {

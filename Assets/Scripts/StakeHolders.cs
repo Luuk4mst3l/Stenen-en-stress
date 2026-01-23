@@ -4,38 +4,29 @@ using UnityEngine;
 public class StakeHolders : MonoBehaviour
 {
     [Header("What to pulse")]
-    [SerializeField]
-    private RectTransform target;
+    [SerializeField] private RectTransform target;
 
     [Header("Pulse settings")]
-    [SerializeField]
-    private float scaleMultiplier = 1.15f;
-
-    [SerializeField]
-    private float halfCycleSeconds = 0.5f;
-
-    [SerializeField]
-    private int pulses = 20;
-
-    [SerializeField]
-    private bool ignoreTimeScale = false;
+    [SerializeField] private float scaleMultiplier = 1.15f;
+    [SerializeField] private float halfCycleSeconds = 0.5f;
+    [SerializeField] private int pulses = 20;
+    [SerializeField] private bool ignoreTimeScale = false;
 
     private Vector3 _baseScale;
     private Coroutine _running;
 
     private void Awake()
     {
-        if (target == null)
-            target = GetComponentInChildren<RectTransform>();
+        if (target == null) target = GetComponentInChildren<RectTransform>();
         _baseScale = target.localScale;
     }
 
     private void OnDisable()
     {
         StopPulse();
-        if (target != null)
-            target.localScale = _baseScale;
+        if (target != null) target.localScale = _baseScale;
     }
+
 
     public void Signal()
     {
@@ -44,8 +35,7 @@ public class StakeHolders : MonoBehaviour
 
     public void StartPulse()
     {
-        if (target == null)
-            return;
+        if (target == null) return;
 
         _baseScale = target.localScale;
         StopPulse();

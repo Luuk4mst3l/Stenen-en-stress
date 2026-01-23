@@ -3,11 +3,8 @@ using UnityEngine;
 
 public class DialogueRunner : MonoBehaviour
 {
-    [SerializeField]
-    private string resourcePath = "level_1_dialogues";
-
-    [SerializeField]
-    private DialogueUIController ui;
+    [SerializeField] private string resourcePath = "level_1_dialogues";
+    [SerializeField] private DialogueUIController ui;
 
     private LevelDialogueData data;
     private int index;
@@ -16,14 +13,13 @@ public class DialogueRunner : MonoBehaviour
     private void Start()
     {
         data = DialogueJsonLoader.LoadLevelFromResources(resourcePath);
-        if (data == null)
-            return;
+        if (data == null) return;
 
         ui.OnOptionSelected += HandleOptionSelected;
         ui.OnTimedOut += HandleTimedOut;
 
         index = 0;
-        // StartCoroutine(RunEvents());
+        StartCoroutine(RunEvents());
     }
 
     private IEnumerator RunEvents()
@@ -46,16 +42,6 @@ public class DialogueRunner : MonoBehaviour
 
             index++;
         }
-    }
-
-    public void StartDialogue()
-    {
-        if (data == null)
-            return;
-
-        StopAllCoroutines();
-        index = 0;
-        StartCoroutine(RunEvents());
     }
 
     private void HandleOptionSelected(DialogueOption opt)
