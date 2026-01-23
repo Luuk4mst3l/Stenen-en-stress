@@ -3,60 +3,58 @@ using UnityEngine;
 
 public class DialogueRunner : MonoBehaviour
 {
-    [SerializeField]
-    private string resourcePath = "level_1_dialogues";
-
-    [SerializeField]
-    private DialogueUIController ui;
-
-    [SerializeField]
-    private GameEventTracker gameEventTracker;
+    [SerializeField] private string resourcePath = "level_1_dialogues";
+    [SerializeField] private DialogueUIController ui;
 
     private LevelDialogueData data;
-    private int nextDialogueIndex = 0;
+    private int index;
     private bool waitingForChoice;
 
     private void Start()
     {
         data = DialogueJsonLoader.LoadLevelFromResources(resourcePath);
-        if (data != null)
-        {
-            ui.OnOptionSelected += HandleOptionSelected;
-            ui.OnTimedOut += HandleTimedOut;
-        }
+        if (data == null) return;
 
-        gameEventTracker.SetActiveDialogue(data);
+        ui.OnOptionSelected += HandleOptionSelected;
+        ui.OnTimedOut += HandleTimedOut;
+
+        index = 0;
+        StartCoroutine(RunEvents());
     }
 
-    public void Activate()
+    private IEnumerator RunEvents()
     {
-        if (data == null || nextDialogueIndex >= data.events.Length)
-            return;
+        if (data.events == null || data.events.Length == 0)
+            yield break;
 
-        waitingForChoice = true;
-        ui.Show(data.events[nextDialogueIndex], data.popupDelaySeconds);
+        while (index < data.events.Length)
+        {
+            // wait between popups
+            yield return new WaitForSeconds(data.popupDelaySeconds);
+
+            waitingForChoice = true;
+
+            // show popup + start bar countdown (use popupDelaySeconds as "time to choose")
+            ui.Show(data.events[index], data.popupDelaySeconds);
+
+            while (waitingForChoice)
+                yield return null;
+
+            index++;
+        }
     }
 
     private void HandleOptionSelected(DialogueOption opt)
     {
+        Debug.Log($"Selected: {opt.id}");
         ui.Hide();
         waitingForChoice = false;
-        nextDialogueIndex++;
     }
 
     private void HandleTimedOut()
     {
+        Debug.Log("Timed out");
         ui.Hide();
         waitingForChoice = false;
-        nextDialogueIndex++;
-    }
-
-    private void OnDestroy()
-    {
-        if (ui != null)
-        {
-            ui.OnOptionSelected -= HandleOptionSelected;
-            ui.OnTimedOut -= HandleTimedOut;
-        }
     }
 }

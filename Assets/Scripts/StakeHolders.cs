@@ -3,58 +3,43 @@ using UnityEngine;
 
 public class StakeHolders : MonoBehaviour
 {
-    [SerializeField]
-    private RectTransform target;
+    [Header("What to pulse")]
+    [SerializeField] private RectTransform target;
 
-    [SerializeField]
-    private float scaleMultiplier = 1.15f;
-
-    [SerializeField]
-    private float halfCycleSeconds = 0.5f;
-
-    [SerializeField]
-    private int pulses = 20;
-
-    [SerializeField]
-    private bool ignoreTimeScale = false;
-
-    [SerializeField]
-    private DialogueRunner dialogueRunner;
-
-    public bool IsNotified { get; private set; } = false;
-    private bool HasBeenClicked = false;
-    private bool IsPulseActive = false;
+    [Header("Pulse settings")]
+    [SerializeField] private float scaleMultiplier = 1.15f;
+    [SerializeField] private float halfCycleSeconds = 0.5f;
+    [SerializeField] private int pulses = 20;
+    [SerializeField] private bool ignoreTimeScale = false;
 
     private Vector3 _baseScale;
     private Coroutine _running;
 
     private void Awake()
     {
-        if (target == null)
-            target = GetComponentInChildren<RectTransform>();
+        if (target == null) target = GetComponentInChildren<RectTransform>();
         _baseScale = target.localScale;
     }
+
+    private void OnDisable()
+    {
+        StopPulse();
+        if (target != null) target.localScale = _baseScale;
+    }
+
 
     public void Signal()
     {
-        if (IsPulseActive)
-            return;
+        StartPulse();
+    }
 
-        IsNotified = true;
-        HasBeenClicked = false;
+    public void StartPulse()
+    {
+        if (target == null) return;
+
         _baseScale = target.localScale;
         StopPulse();
         _running = StartCoroutine(PulseRoutine());
-    }
-
-    public void OnClicked()
-    {
-        if (!IsNotified || HasBeenClicked)
-            return;
-
-        HasBeenClicked = true;
-        StopPulse();
-        dialogueRunner?.Activate();
     }
 
     public void StopPulse()
@@ -64,16 +49,10 @@ public class StakeHolders : MonoBehaviour
             StopCoroutine(_running);
             _running = null;
         }
-
-        if (target != null)
-            target.localScale = _baseScale;
-
-        IsPulseActive = false;
     }
 
     private IEnumerator PulseRoutine()
     {
-        IsPulseActive = true;
         Vector3 big = _baseScale * scaleMultiplier;
 
         for (int i = 0; i < pulses; i++)
@@ -83,18 +62,19 @@ public class StakeHolders : MonoBehaviour
         }
 
         target.localScale = _baseScale;
-        IsPulseActive = false;
         _running = null;
     }
 
     private IEnumerator LerpScale(Vector3 from, Vector3 to, float duration)
     {
         float t = 0f;
+
         while (t < duration)
         {
             t += ignoreTimeScale ? Time.unscaledDeltaTime : Time.deltaTime;
             float p = Mathf.Clamp01(t / duration);
             float eased = p * p * (3f - 2f * p);
+
             target.localScale = Vector3.LerpUnclamped(from, to, eased);
             yield return null;
         }

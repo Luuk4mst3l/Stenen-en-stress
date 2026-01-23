@@ -24,11 +24,9 @@ public class StakeholderRelationshipManager : MonoBehaviour
     //[SerializeField] private PlayerWallet wallet;
 
     [Header("Stakeholder UI bindings")]
-    [SerializeField]
-    private StakeholderBinding[] bindings;
+    [SerializeField] private StakeholderBinding[] bindings;
 
-    private readonly Dictionary<string, StakeholderBinding> _bindingByKey =
-        new Dictionary<string, StakeholderBinding>();
+    private readonly Dictionary<string, StakeholderBinding> _bindingByKey = new Dictionary<string, StakeholderBinding>();
     private readonly Dictionary<string, float> _valueByKey = new Dictionary<string, float>();
 
     private void Awake()
@@ -38,14 +36,12 @@ public class StakeholderRelationshipManager : MonoBehaviour
         _bindingByKey.Clear();
         _valueByKey.Clear();
 
-        if (bindings == null)
-            return;
+        if (bindings == null) return;
 
         for (int i = 0; i < bindings.Length; i++)
         {
             var b = bindings[i];
-            if (b == null || string.IsNullOrWhiteSpace(b.partij))
-                continue;
+            if (b == null || string.IsNullOrWhiteSpace(b.partij)) continue;
 
             string key = NormalizeKey(b.partij);
 
@@ -63,10 +59,10 @@ public class StakeholderRelationshipManager : MonoBehaviour
 
     public void ApplyDelta(string partij, int delta)
     {
-        if (string.IsNullOrWhiteSpace(partij) || delta == 0)
-            return;
+        if (string.IsNullOrWhiteSpace(partij) || delta == 0) return;
 
         string key = NormalizeKey(partij);
+
 
         if (key == "budget")
         {
@@ -97,27 +93,27 @@ public class StakeholderRelationshipManager : MonoBehaviour
         }
     }
 
-    //     private void ApplyMoney(int delta)
-    //     {
-    //         if (wallet == null)
-    //         {
-    //             Debug.LogWarning("PlayerWallet not found; cannot apply budget delta.");
-    //             return;
-    //         }
-    //
-    //         if (delta > 0)
-    //         {
-    //             wallet.Add(delta);
-    //         }
-    //         else
-    //         {
-    //             bool ok = wallet.Spend(-delta);
-    //             if (!ok)
-    //             {
-    //                 Debug.LogWarning($"Not enough money to spend {-delta}. Budget unchanged.");
-    //             }
-    //         }
-    //     }
+//     private void ApplyMoney(int delta)
+//     {
+//         if (wallet == null)
+//         {
+//             Debug.LogWarning("PlayerWallet not found; cannot apply budget delta.");
+//             return;
+//         }
+//
+//         if (delta > 0)
+//         {
+//             wallet.Add(delta);
+//         }
+//         else
+//         {
+//             bool ok = wallet.Spend(-delta);
+//             if (!ok)
+//             {
+//                 Debug.LogWarning($"Not enough money to spend {-delta}. Budget unchanged.");
+//             }
+//         }
+//     }
 
     private string NormalizeKey(string s) => s.Trim().ToLowerInvariant();
 }
