@@ -22,7 +22,13 @@ public class DialogueRunner : MonoBehaviour
         StartCoroutine(RunEvents());
     }
 
-    private IEnumerator RunEvents()
+    public void SkipDialogueIndex()
+    {
+        nextDialogueIndex++;
+        Debug.Log($"DialogueRunner: Skipped to dialogue index {nextDialogueIndex}");
+    }
+
+    public void Activate()
     {
         if (data.events == null || data.events.Length == 0)
             yield break;

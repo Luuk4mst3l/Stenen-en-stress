@@ -1,17 +1,31 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StakeHolders : MonoBehaviour
 {
     [Header("What to pulse")]
     [SerializeField] private RectTransform target;
 
-    [Header("Pulse settings")]
-    [SerializeField] private float scaleMultiplier = 1.15f;
-    [SerializeField] private float halfCycleSeconds = 0.5f;
-    [SerializeField] private int pulses = 20;
-    [SerializeField] private bool ignoreTimeScale = false;
+    [SerializeField]
+    private float scaleMultiplier = 1.15f;
 
+    [SerializeField]
+    private float halfCycleSeconds = 0.5f;
+
+    [SerializeField]
+    private int pulses = 3;
+
+    [SerializeField]
+    private bool ignoreTimeScale = false;
+
+    [SerializeField]
+    private DialogueRunner dialogueRunner;
+
+    public bool IsNotified { get; private set; } = false;
+    private bool HasBeenClicked = false;
+    private bool IsPulseActive = false;
     private Vector3 _baseScale;
     private Coroutine _running;
 
@@ -42,6 +56,16 @@ public class StakeHolders : MonoBehaviour
         _running = StartCoroutine(PulseRoutine());
     }
 
+    public void OnClicked()
+    {
+        if (!IsNotified || HasBeenClicked || !IsPulseActive)
+            return;
+
+        HasBeenClicked = true;
+        StopPulse();
+        dialogueRunner?.Activate();
+    }
+
     public void StopPulse()
     {
         if (_running != null)
@@ -57,12 +81,13 @@ public class StakeHolders : MonoBehaviour
 
         for (int i = 0; i < pulses; i++)
         {
+            Debug.Log(i);
             yield return LerpScale(_baseScale, big, halfCycleSeconds);
             yield return LerpScale(big, _baseScale, halfCycleSeconds);
         }
-
         target.localScale = _baseScale;
         _running = null;
+        dialogueRunner.SkipDialogueIndex();
     }
 
     private IEnumerator LerpScale(Vector3 from, Vector3 to, float duration)
