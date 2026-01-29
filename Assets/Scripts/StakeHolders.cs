@@ -13,7 +13,7 @@ public class StakeHolders : MonoBehaviour
     private float halfCycleSeconds = 0.5f;
 
     [SerializeField]
-    private int pulses = 20;
+    private int pulses = 5;
 
     [SerializeField]
     private bool ignoreTimeScale = false;
@@ -49,7 +49,7 @@ public class StakeHolders : MonoBehaviour
 
     public void OnClicked()
     {
-        if (!IsNotified || HasBeenClicked)
+        if (!IsNotified || HasBeenClicked || !IsPulseActive)
             return;
 
         HasBeenClicked = true;
@@ -81,7 +81,7 @@ public class StakeHolders : MonoBehaviour
             yield return LerpScale(_baseScale, big, halfCycleSeconds);
             yield return LerpScale(big, _baseScale, halfCycleSeconds);
         }
-
+        dialogueRunner?.SkipDialogueIndex();
         target.localScale = _baseScale;
         IsPulseActive = false;
         _running = null;
