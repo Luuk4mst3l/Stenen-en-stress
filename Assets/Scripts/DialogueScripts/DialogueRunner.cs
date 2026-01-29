@@ -12,9 +12,13 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField]
     private GameEventTracker gameEventTracker;
 
+    [SerializeField]
+    private float initialDialogueDelay = 10f;
+
     private LevelDialogueData data;
     private int nextDialogueIndex = 0;
     private bool waitingForChoice;
+    private float elapsedTime = 0f;
 
     private void Start()
     {
@@ -26,6 +30,35 @@ public class DialogueRunner : MonoBehaviour
         }
 
         gameEventTracker.SetActiveDialogue(data);
+    }
+
+    private void FixedUpdate()
+    {
+        if (gameEventTracker != null && data != null && !waitingForChoice)
+        {
+            elapsedTime += Time.fixedDeltaTime;
+            UpdateDialogueIntervals();
+        }
+    }
+
+    private void UpdateDialogueIntervals()
+    {
+        if (nextDialogueIndex >= data.events.Length)
+            return;
+
+        float unlockTime = initialDialogueDelay + nextDialogueIndex * data.popupDelaySeconds;
+
+        if (elapsedTime >= unlockTime)
+        {
+            int stakeholderIndex = data.events[nextDialogueIndex].partij;
+            gameEventTracker.NotifyStakeholderForDialogue(stakeholderIndex);
+        }
+    }
+
+    public void SkipDialogueIndex()
+    {
+        Debug.Log("Skipping dialogue index " + nextDialogueIndex);
+        nextDialogueIndex++;
     }
 
     public void Activate()

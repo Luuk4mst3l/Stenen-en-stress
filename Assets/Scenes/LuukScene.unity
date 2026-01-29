@@ -8466,6 +8466,7 @@ MonoBehaviour:
   resourcePath: dialogue_001
   ui: {fileID: 1253476822}
   gameEventTracker: {fileID: 1014102061}
+  initialDialogueDelay: 5
 --- !u!224 &1891514536 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2313334928671883737, guid: dda123701d56ed44d865205feb527a99, type: 3}
@@ -8677,6 +8678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781799962}
     m_Modifications:
+    - target: {fileID: 2347942546908200457, guid: 325ea444593879244aa6d61a11465f2b, type: 3}
+      propertyPath: pulses
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2347942546908200457, guid: 325ea444593879244aa6d61a11465f2b, type: 3}
       propertyPath: dialogueRunner
       value: 
