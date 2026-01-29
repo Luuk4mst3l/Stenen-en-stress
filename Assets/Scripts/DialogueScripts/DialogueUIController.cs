@@ -6,24 +6,38 @@ using UnityEngine.UI;
 public class DialogueUIController : MonoBehaviour
 {
     [Header("UI References")]
-    [SerializeField] private TMP_Text titleText;
-    [SerializeField] private TMP_Text descriptionText;
+    [SerializeField]
+    private TMP_Text titleText;
 
-    [SerializeField] private Button option1Button;
-    [SerializeField] private TMP_Text option1Label;
+    [SerializeField]
+    private TMP_Text descriptionText;
 
-    [SerializeField] private Button option2Button;
-    [SerializeField] private TMP_Text option2Label;
+    [SerializeField]
+    private Button option1Button;
+
+    [SerializeField]
+    private TMP_Text option1Label;
+
+    [SerializeField]
+    private Button option2Button;
+
+    [SerializeField]
+    private TMP_Text option2Label;
 
     [Header("Timer Bar (top image)")]
-    [SerializeField] private Image timerFillImage; // top image
-    [SerializeField] private bool hideBarWhenNoTimer = true;
+    [SerializeField]
+    private Image timerFillImage; // top image
+
+    [SerializeField]
+    private bool hideBarWhenNoTimer = true;
 
     [Header("Gameplay Wiring")]
-    [SerializeField] private StakeholderRelationshipManager relationshipManager;
+    [SerializeField]
+    private StakeholderRelationshipManager relationshipManager;
 
     [Header("Timeout Behaviour")]
-    [SerializeField] private bool autoPickFirstOptionOnTimeout = false;
+    [SerializeField]
+    private bool autoPickFirstOptionOnTimeout = false;
 
     public event Action<DialogueOption> OnOptionSelected;
     public event Action OnTimedOut;
@@ -39,7 +53,7 @@ public class DialogueUIController : MonoBehaviour
         gameObject.SetActive(false);
 
         if (relationshipManager == null)
-            relationshipManager = FindObjectOfType<StakeholderRelationshipManager>();
+            relationshipManager = FindFirstObjectByType<StakeholderRelationshipManager>();
 
         if (timerFillImage != null)
         {
@@ -47,13 +61,15 @@ public class DialogueUIController : MonoBehaviour
             timerFillImage.fillMethod = Image.FillMethod.Horizontal;
             timerFillImage.fillOrigin = (int)Image.OriginHorizontal.Left;
             timerFillImage.fillAmount = 1f;
-            if (hideBarWhenNoTimer) timerFillImage.gameObject.SetActive(false);
+            if (hideBarWhenNoTimer)
+                timerFillImage.gameObject.SetActive(false);
         }
     }
 
     private void Update()
     {
-        if (!timerRunning) return;
+        if (!timerRunning)
+            return;
 
         timerRemaining -= Time.deltaTime;
 
@@ -118,7 +134,8 @@ public class DialogueUIController : MonoBehaviour
         }
 
         button.gameObject.SetActive(true);
-        if (label != null) label.text = option.description ?? "";
+        if (label != null)
+            label.text = option.description ?? "";
 
         button.onClick.AddListener(() =>
         {
@@ -131,7 +148,8 @@ public class DialogueUIController : MonoBehaviour
 
     private void ApplyOptionEffects(DialogueOption option)
     {
-        if (option == null || relationshipManager == null) return;
+        if (option == null || relationshipManager == null)
+            return;
 
         relationshipManager.ApplyDelta(option.partij1, option.waarde1);
         relationshipManager.ApplyDelta(option.partij2, option.waarde2);
@@ -139,12 +157,14 @@ public class DialogueUIController : MonoBehaviour
 
     private void StartTimer(float seconds)
     {
-        if (timerFillImage == null) return;
+        if (timerFillImage == null)
+            return;
 
         if (seconds <= 0f)
         {
             timerRunning = false;
-            if (hideBarWhenNoTimer) timerFillImage.gameObject.SetActive(false);
+            if (hideBarWhenNoTimer)
+                timerFillImage.gameObject.SetActive(false);
             return;
         }
 
@@ -163,7 +183,8 @@ public class DialogueUIController : MonoBehaviour
         if (timerFillImage != null)
         {
             SetBar(1f);
-            if (hideBarWhenNoTimer) timerFillImage.gameObject.SetActive(false);
+            if (hideBarWhenNoTimer)
+                timerFillImage.gameObject.SetActive(false);
         }
     }
 
@@ -175,7 +196,12 @@ public class DialogueUIController : MonoBehaviour
 
     private void HandleTimeout()
     {
-        if (autoPickFirstOptionOnTimeout && current != null && current.options != null && current.options.Length > 0)
+        if (
+            autoPickFirstOptionOnTimeout
+            && current != null
+            && current.options != null
+            && current.options.Length > 0
+        )
         {
             var opt = current.options[0];
             ApplyOptionEffects(opt);

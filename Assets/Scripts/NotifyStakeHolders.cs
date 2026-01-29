@@ -1,41 +1,35 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NotifyStakeholders : MonoBehaviour
 {
-    [SerializeField] private StakeHolders stakeHolder1;
-    [SerializeField] private StakeHolders stakeHolder2;
-    [SerializeField] private StakeHolders stakeHolder3;
-    [SerializeField] private StakeHolders stakeHolder4;
+    [SerializeField]
+    private List<StakeHolders> stakeholders = new List<StakeHolders>();
 
-
-    public void notifyAll()
+    public void NotifyAll()
     {
-        stakeHolder1?.Signal();
-        stakeHolder2?.Signal();
-        stakeHolder3?.Signal();
-        stakeHolder4?.Signal();
+        foreach (var stakeholder in stakeholders)
+        {
+            stakeholder?.Signal();
+        }
     }
 
-    public void notifyStakeHolder1()
+    public void NotifyStakeholder(int index)
     {
-        stakeHolder1?.Signal();
+        if (index < 0 || index >= stakeholders.Count)
+        {
+            Debug.LogWarning($"NotifyStakeholder: Index {index} is out of range.");
+            return;
+        }
+
+        stakeholders[index]?.Signal();
     }
 
-    public void notifyStakeHolder2()
+    public bool IsStakeholderNotified(int index)
     {
-        stakeHolder2?.Signal();
+        if (index < 0 || index >= stakeholders.Count)
+            return false;
+
+        return stakeholders[index] != null && stakeholders[index].IsNotified;
     }
-
-    public void notifyStakeHolder3()
-    {
-        stakeHolder3?.Signal();
-    }
-
-    public void notifyStakeHolder4()
-    {
-        stakeHolder4?.Signal();
-    }
-
-
-
 }
