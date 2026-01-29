@@ -28,12 +28,6 @@ public class DialogueRunner : MonoBehaviour
         Debug.Log($"DialogueRunner: Skipped to dialogue index {nextDialogueIndex}");
     }
 
-    public void SkipDialogueIndex()
-    {
-        nextDialogueIndex++;
-        Debug.Log($"DialogueRunner: Skipped to dialogue index {nextDialogueIndex}");
-    }
-
     public void Activate()
     {
         if (data.events == null || data.events.Length == 0)
