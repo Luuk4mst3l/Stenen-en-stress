@@ -19,6 +19,9 @@ public class DialogueRunner : MonoBehaviour
     private int nextDialogueIndex = 0;
     private bool waitingForChoice;
     private float elapsedTime = 0f;
+    
+    private bool hasNotifiedCurrent = false;
+    private float nextNotifyTime = 0f;
 
     private void Start()
     {
@@ -30,14 +33,31 @@ public class DialogueRunner : MonoBehaviour
         }
 
         gameEventTracker.SetActiveDialogue(data);
+
+        nextNotifyTime = Time.time + initialDialogueDelay;
+        hasNotifiedCurrent = false;
     }
 
     private void FixedUpdate()
     {
-        if (gameEventTracker != null && data != null && !waitingForChoice)
+        if (data == null || gameEventTracker == null)
+            return;
+
+        if (waitingForChoice)
+            return;
+
+        if (nextDialogueIndex >= data.events.Length)
+            return;
+
+        if (hasNotifiedCurrent)
+            return;
+
+        if (Time.time >= nextNotifyTime)
         {
-            elapsedTime += Time.fixedDeltaTime;
-            UpdateDialogueIntervals();
+            int stakeholderIndex = data.events[nextDialogueIndex].partij;
+            gameEventTracker.NotifyStakeholderForDialogue(stakeholderIndex);
+            
+            hasNotifiedCurrent = true;
         }
     }
 
@@ -75,6 +95,9 @@ public class DialogueRunner : MonoBehaviour
         ui.Hide();
         waitingForChoice = false;
         nextDialogueIndex++;
+
+        hasNotifiedCurrent = false;
+        nextNotifyTime = Time.time + data.popupDelaySeconds;
     }
 
     private void HandleTimedOut()
@@ -82,6 +105,9 @@ public class DialogueRunner : MonoBehaviour
         ui.Hide();
         waitingForChoice = false;
         nextDialogueIndex++;
+
+        hasNotifiedCurrent = false;
+        nextNotifyTime = Time.time + data.popupDelaySeconds;
     }
 
     private void OnDestroy()

@@ -64,6 +64,11 @@ public class DialogueUIController : MonoBehaviour
             if (hideBarWhenNoTimer)
                 timerFillImage.gameObject.SetActive(false);
         }
+        relationshipManager.ApplyDelta("gemeente", 0);
+        relationshipManager.ApplyDelta("groene", 0);
+        relationshipManager.ApplyDelta("investeerder", 0);
+        relationshipManager.ApplyDelta("buurtbewoner", 0);
+        
     }
 
     private void Update()
