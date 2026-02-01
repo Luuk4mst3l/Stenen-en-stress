@@ -8,6 +8,12 @@ public class MoneyBadgeUI : MonoBehaviour
 
     [SerializeField]
     private TMP_Text moneyText;
+    
+    private void Awake()
+    {
+        if (wallet == null)
+            wallet = FindFirstObjectByType<PlayerWallet>();
+    }
 
     private void OnEnable()
     {
