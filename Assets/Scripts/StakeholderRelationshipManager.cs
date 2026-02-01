@@ -86,10 +86,10 @@ public class StakeholderRelationshipManager : MonoBehaviour
                 binding.relationshipUI.SetRelationship(next);
             }
 
-            if (binding.pulse != null)
-            {
-                binding.pulse.Signal();
-            }
+//             if (binding.pulse != null)
+//             {
+//                 binding.pulse.Signal();
+//             }
         }
         else
         {

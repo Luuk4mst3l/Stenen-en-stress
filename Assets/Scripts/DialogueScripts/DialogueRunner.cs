@@ -6,6 +6,9 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField]
     private string resourcePath = "level_1_dialogues";
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip signalClip;
+
     [SerializeField]
     private DialogueUIController ui;
 
@@ -78,6 +81,10 @@ public class DialogueRunner : MonoBehaviour
     public void SkipDialogueIndex()
     {
         Debug.Log("Skipping dialogue index " + nextDialogueIndex);
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (audioSource != null && signalClip != null)
+             audioSource.PlayOneShot(signalClip, 1f);
+
         nextDialogueIndex++;
     }
 
