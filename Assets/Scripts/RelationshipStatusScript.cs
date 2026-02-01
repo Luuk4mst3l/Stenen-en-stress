@@ -33,7 +33,7 @@ public class RelationshipTrackerUI : MonoBehaviour
 
     private void Awake()
     {
-        targetValue = minValue;
+        targetValue = (minValue + maxValue) / 2f;
         UpdateHeartInstant(targetValue);
     }
 
