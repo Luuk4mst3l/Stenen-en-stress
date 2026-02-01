@@ -12,7 +12,7 @@
         {
           "id": "L3-E01-A",
           "description": "Ontwerp maken met focus op kwaliteit en uitstraling.",
-          "budget": 2000,
+          "budget": 1500,
           "partij1": "investeerder",
           "waarde1": 2,
           "partij2": "gemeente",
@@ -38,7 +38,7 @@
         {
           "id": "L3-E02-A",
           "description": "Extra investeren in een stevige fundering.",
-          "budget": -1000,
+          "budget": -1500,
           "partij1": "gemeente",
           "waarde1": 3,
           "partij2": "investeerder",
@@ -47,7 +47,7 @@
         {
           "id": "L3-E02-B",
           "description": "Goedkoop oplossen en risico accepteren.",
-          "budget": 500,
+          "budget": 400,
           "partij1": "gemeente",
           "waarde1": -4,
           "partij2": "investeerder",
@@ -64,7 +64,7 @@
         {
           "id": "L3-E03-A",
           "description": "Extra verdiepingen bouwen voor meer kantoren.",
-          "budget": -3000,
+          "budget": -4500,
           "partij1": "investeerder",
           "waarde1": 4,
           "partij2": "groene",
@@ -90,7 +90,7 @@
         {
           "id": "L3-E04-A",
           "description": "Moderne gevel met luxe afwerking.",
-          "budget": -1500,
+          "budget": -2200,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "gemeente",
@@ -99,7 +99,7 @@
         {
           "id": "L3-E04-B",
           "description": "Standaard gevel om kosten te besparen.",
-          "budget": 500,
+          "budget": 400,
           "partij1": "investeerder",
           "waarde1": 1,
           "partij2": "gemeente",
@@ -116,7 +116,7 @@
         {
           "id": "L3-E05-A",
           "description": "Flexibele werkplekken ontwerpen.",
-          "budget": 1500,
+          "budget": 1100,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "gemeente",
@@ -142,7 +142,7 @@
         {
           "id": "L3-E06-A",
           "description": "Extra parkeerlagen bouwen.",
-          "budget": -1000,
+          "budget": -1500,
           "partij1": "investeerder",
           "waarde1": 2,
           "partij2": "groene",
@@ -151,7 +151,7 @@
         {
           "id": "L3-E06-B",
           "description": "Minimaal aantal parkeerplaatsen.",
-          "budget": 500,
+          "budget": 400,
           "partij1": "groene",
           "waarde1": 3,
           "partij2": "investeerder",
@@ -168,7 +168,7 @@
         {
           "id": "L3-E07-A",
           "description": "Extra mensen inzetten om sneller klaar te zijn.",
-          "budget": -1500,
+          "budget": -2200,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "gemeente",
@@ -194,7 +194,7 @@
         {
           "id": "L3-E08-A",
           "description": "Moderne installaties plaatsen.",
-          "budget": -2000,
+          "budget": -3000,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "groene",
@@ -220,7 +220,7 @@
         {
           "id": "L3-E09-A",
           "description": "Extra beveiligingsmaatregelen nemen.",
-          "budget": -1000,
+          "budget": -1500,
           "partij1": "gemeente",
           "waarde1": 3,
           "partij2": "investeerder",
@@ -246,7 +246,7 @@
         {
           "id": "L3-E10-A",
           "description": "Onderhoudscontract afsluiten.",
-          "budget": -500,
+          "budget": -800,
           "partij1": "investeerder",
           "waarde1": 1,
           "partij2": "groene",
@@ -255,7 +255,7 @@
         {
           "id": "L3-E10-B",
           "description": "Onderhoud later regelen.",
-          "budget": 500,
+          "budget": 400,
           "partij1": "investeerder",
           "waarde1": -3,
           "partij2": "groene",
@@ -272,7 +272,7 @@
         {
           "id": "L3-E11-A",
           "description": "Hogere huurprijs voor meer winst.",
-          "budget": 2500,
+          "budget": 1900,
           "partij1": "investeerder",
           "waarde1": 4,
           "partij2": "gemeente",
@@ -281,7 +281,7 @@
         {
           "id": "L3-E11-B",
           "description": "Lagere huurprijs voor snelle bezetting.",
-          "budget": 1000,
+          "budget": 800,
           "partij1": "investeerder",
           "waarde1": -1,
           "partij2": "gemeente",
@@ -298,7 +298,7 @@
         {
           "id": "L3-E12-A",
           "description": "Extra groen toevoegen.",
-          "budget": -1200,
+          "budget": -1800,
           "partij1": "investeerder",
           "waarde1": -1,
           "partij2": "groene",
@@ -324,7 +324,7 @@
         {
           "id": "L3-E13-A",
           "description": "Actief promoten bij bedrijven.",
-          "budget": -800,
+          "budget": -1200,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "groene",
@@ -350,7 +350,7 @@
         {
           "id": "L3-E14-A",
           "description": "Vast contract met gunstige voorwaarden.",
-          "budget": -500,
+          "budget": -800,
           "partij1": "groene",
           "waarde1": 1,
           "partij2": "investeerder",
@@ -359,7 +359,7 @@
         {
           "id": "L3-E14-B",
           "description": "Variabel contract nemen.",
-          "budget": 500,
+          "budget": 400,
           "partij1": "groene",
           "waarde1": -1,
           "partij2": "investeerder",
@@ -376,7 +376,7 @@
         {
           "id": "L3-E15-A",
           "description": "Netjes afronden voor langdurige verhuur.",
-          "budget": -1000,
+          "budget": -1500,
           "partij1": "gemeente",
           "waarde1": 2,
           "partij2": "investeerder",
@@ -385,7 +385,7 @@
         {
           "id": "L3-E15-B",
           "description": "Zo snel mogelijk opleveren.",
-          "budget": 1000,
+          "budget": 800,
           "partij1": "investeerder",
           "waarde1": 3,
           "partij2": "gemeente",
