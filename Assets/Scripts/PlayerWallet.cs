@@ -26,12 +26,11 @@ public class PlayerWallet : MonoBehaviour
 
     public bool Spend(int amount)
     {
-        if (amount <= 0)
-            return true;
-        if (Money < amount)
-            return false;
+        Debug.Log($"Attempting to spend {amount}. Current balance: {Money}");
 
-        Money -= amount;
+        Debug.Log($"Spending money... {Money}");
+
+        Money += amount;
         OnMoneyChanged?.Invoke(Money);
         return true;
     }
