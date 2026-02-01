@@ -99501,7 +99501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beef4d2281448714381b42e550835b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWallet
-  startingMoney: 20000
+  startingMoney: 21000
 --- !u!1 &1222487022
 GameObject:
   m_ObjectHideFlags: 0
@@ -104845,9 +104845,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_text
-      value: 'Houd alle stakeholders tevreden.
+      value: 'Een industriegigant wilt graag een nieuwe terrein openen.
 
-        Ga niet blut.'
+        Daarvoor
+        ben jij uitgekozen wegens je fantastische werk!
+
+        Buurbewoners zijn
+        erg skeptisch over het industrieterrein.
+
+
+        Bouw een industrieterrein.
+
+
+        Houdt
+        nu ook rekening met de buurtbewoners!
+
+        Budget: $20000
+
+        Deadline:
+        2 minuten 50 seconden'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_fontSize
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5471606317946477197, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_Pivot.x
@@ -105544,7 +105564,7 @@ PrefabInstance:
       objectReference: {fileID: 794124221}
     - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
       propertyPath: levelDuration
-      value: 150
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
       propertyPath: dialogueRunner
@@ -105562,6 +105582,26 @@ PrefabInstance:
       propertyPath: stakeholderNotifier
       value: 
       objectReference: {fileID: 1781799966}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: relationshipUIs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 746781949}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 63793305}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 838555459}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1365220308}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

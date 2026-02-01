@@ -113054,8 +113054,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1781799962}
     m_Modifications:
     - target: {fileID: 758008253683655315, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.699984
+      objectReference: {fileID: 0}
+    - target: {fileID: 758008253683655315, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 31
+      value: 110.900024
       objectReference: {fileID: 0}
     - target: {fileID: 1171375031639279834, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_LocalScale.x
@@ -113122,8 +113126,12 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3931846842227404053, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931846842227404053, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -191
+      value: -111.1
       objectReference: {fileID: 0}
     - target: {fileID: 4031256504562571037, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_SizeDelta.x
@@ -113149,6 +113157,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2.2288
       objectReference: {fileID: 0}
+    - target: {fileID: 4402068222968745748, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.699984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402068222968745748, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.099976
+      objectReference: {fileID: 0}
     - target: {fileID: 5886759891566359177, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: maxValue
       value: 10
@@ -113173,17 +113189,29 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8066124170537639548, guid: d67a75bc3a92ab74ca69c5774246fe2f, type: 3}
+    - target: {fileID: 7597516690477190410, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.699984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597516690477190410, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 42.90003
+      objectReference: {fileID: 0}
     - target: {fileID: 7856988868895816988, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_SizeDelta.x
       value: 447.2
       objectReference: {fileID: 0}
     - target: {fileID: 7856988868895816988, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 165.783
+      value: 295.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7856988868895816988, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -341
       objectReference: {fileID: 0}
     - target: {fileID: 7856988868895816988, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 107.58393
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 7900929255561772303, guid: 846eefd6f21252348bba2d71f33f4775, type: 3}
       propertyPath: maxValue
@@ -115140,6 +115168,31 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -12.800049
       objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_text
+      value: 'Je bent nu de beste projectmanager van de stad. Er is veel vraag voor
+
+        woningen
+        in je omgeving. Om het woning tekort op te lossen wil je
+
+        appartementencomplexen
+        bouwen. Dit is je magnum opus van projecten!
+
+
+        Bouw de appartementencomplexen!
+
+
+        Houd
+        rekening met iedereen!
+
+        Budget: $25000
+
+        Deadline: 3.5 minuten'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 5471606317946477197, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -115831,7 +115884,7 @@ PrefabInstance:
       objectReference: {fileID: 1238851291}
     - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
       propertyPath: levelDuration
-      value: 90
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
       propertyPath: dialogueRunner
@@ -115849,6 +115902,26 @@ PrefabInstance:
       propertyPath: stakeholderNotifier
       value: 
       objectReference: {fileID: 1781799966}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: relationshipUIs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 658862888}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 746781949}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 646174471}
+    - target: {fileID: 7766591348416934181, guid: 16cb090d62ef5334499fa41fc4a8bac3, type: 3}
+      propertyPath: 'relationshipUIs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 838555459}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
