@@ -8539,12 +8539,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_text
-      value: 'Bouw het huis
+      value: 'Je hebt je eerste projectmanager baan, en begint met een klein projectje.
 
-        Houd de gemeente tevreden
+        Bouw
+        je eerste woonhuis!
 
-        Zorg dat
-        je niet in de schulden komt'
+
+        Houd de gemeente tevreden door de juiste keuzecombinaties
+        te maken!
+
+        Budget: $7000
+
+        Deadline: 50 seconden
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_fontSize
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5471606317946477197, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_Pivot.x
@@ -8643,6 +8655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingTimer
       objectReference: {fileID: 0}
+    - target: {fileID: 944758516248823737, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4081438131630931152, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8721,6 +8737,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4081438131630931152, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635918341132252758, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
+      propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

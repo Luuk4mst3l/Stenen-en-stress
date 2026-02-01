@@ -288,11 +288,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1945862945225900093, guid: 55cb8c45f3483224c98840278fc984ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 54.11709
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1945862945225900093, guid: 55cb8c45f3483224c98840278fc984ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18.423359
+      value: 18.42334
       objectReference: {fileID: 0}
     - target: {fileID: 1945862945225900093, guid: 55cb8c45f3483224c98840278fc984ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52799,7 +52799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 814903939782960713, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 969023612982968396, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -52811,10 +52811,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_text
-      value: 'Bouw een kantoor!
+      value: 'Je ambities als projectmanager worden groter, en daarbij je projecten
+        ook!
+
+        Investeerders beginnen interesse te krijgen in je werk. Bouw
+        een kantoor!
 
 
-        Houdt nu ook rekening met de investeerders'
+        Gebruik de investeerders voor extra mogelijkheden!
+
+        Budget:
+        $10000
+
+        Deadline: 2 minuut 10s'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806631353252345191, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5471606317946477197, guid: 2d447b383b9812a4fb8664d7a9a9e5e4, type: 3}
       propertyPath: m_Pivot.x
@@ -53019,6 +53040,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4081438131630931152, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635918341132252758, guid: 8d2afce7c28816d4d98ff5847c811288, type: 3}
+      propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
