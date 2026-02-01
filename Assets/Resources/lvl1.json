@@ -1,7 +1,7 @@
 {
   "level": 1,
   "gebouw": "Klein woonhuis",
-  "popupDelaySeconds": 15,
+  "popupDelaySeconds": 5,
   "events": [
     {
       "id": "L1-E01",
@@ -11,14 +11,14 @@
       "options": [
         {
           "id": "L1-E01-A",
-          "description": "Extra investeren in isolatie en afwerking.",
+          "description": "Extra investeren in isolatie en afwerking. $2000",
           "budget": -2000,
           "partij1": "gemeente",
           "waarde1": 25
         },
         {
           "id": "L1-E01-B",
-          "description": "Vasthouden aan minimale eisen.",
+          "description": "Vasthouden aan minimale eisen. $800",
           "budget": -800,
           "partij1": "gemeente",
           "waarde1": -15
@@ -33,14 +33,14 @@
       "options": [
         {
           "id": "L1-E02-A",
-          "description": "Duurzame materialen gebruiken.",
+          "description": "Duurzame materialen gebruiken. $1500",
           "budget": -1500,
           "partij1": "gemeente",
           "waarde1": 20
         },
         {
           "id": "L1-E02-B",
-          "description": "Goedkopere materialen kiezen.",
+          "description": "Goedkopere materialen kiezen. $700",
           "budget": -700,
           "partij1": "gemeente",
           "waarde1": -15
@@ -55,14 +55,14 @@
       "options": [
         {
           "id": "L1-E03-A",
-          "description": "Groene tuin met waterafvoer.",
+          "description": "Groene tuin met waterafvoer. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": 35
         },
         {
           "id": "L1-E03-B",
-          "description": "Eenvoudige onderhoudsvriendelijke tuin.",
+          "description": "Eenvoudige onderhoudsvriendelijke tuin. $500",
           "budget": -500,
           "partij1": "gemeente",
           "waarde1": 10
@@ -77,14 +77,14 @@
       "options": [
         {
           "id": "L1-E04-A",
-          "description": "Waterdoorlatende bestrating.",
+          "description": "Waterdoorlatende bestrating. $900",
           "budget": -900,
           "partij1": "gemeente",
           "waarde1": 40
         },
         {
           "id": "L1-E04-B",
-          "description": "Standaard oprit aanleggen.",
+          "description": "Standaard oprit aanleggen. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -30
@@ -99,14 +99,14 @@
       "options": [
         {
           "id": "L1-E05-A",
-          "description": "Extra controle uitvoeren.",
+          "description": "Extra controle uitvoeren. $1200",
           "budget": -1200,
           "partij1": "gemeente",
           "waarde1": 30
         },
         {
           "id": "L1-E05-B",
-          "description": "Snel opleveren.",
+          "description": "Snel opleveren. $600",
           "budget": -600,
           "partij1": "gemeente",
           "waarde1": -25
