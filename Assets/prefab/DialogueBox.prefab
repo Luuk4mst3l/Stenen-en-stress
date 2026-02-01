@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -937,6 +937,7 @@ MonoBehaviour:
   timerFillImage: {fileID: 4244106815884390114}
   hideBarWhenNoTimer: 1
   relationshipManager: {fileID: 0}
+  playerWallet: {fileID: 0}
   autoPickFirstOptionOnTimeout: 0
 --- !u!114 &7249009324975982841
 MonoBehaviour:
