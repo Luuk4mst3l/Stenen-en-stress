@@ -14,12 +14,16 @@
           "description": "Twee complexen bouwen voor maximale opbrengst. +$4000",
           "budget": 4000,
           "partij1": "investeerders",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "bewoners",
+          "waarde2": -2
         },
         {
           "id": "L5-E01-B",
           "description": "Eén complex bouwen met meer ruimte per woning. $1500",
           "budget": -1500,
+          "partij1": "investeerders",
+          "waarde1": -2,
           "partij2": "bewoners",
           "waarde2": 2
         }
@@ -36,12 +40,16 @@
           "description": "Luxe appartementen realiseren. +$3000",
           "budget": 3000,
           "partij1": "investeerders",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "bewoners",
+          "waarde2": -2
         },
         {
           "id": "L5-E02-B",
           "description": "Betaalbare woningen bouwen. $1000",
           "budget": -1000,
+          "partij1": "investeerders",
+          "waarde1": -2,
           "partij2": "bewoners",
           "waarde2": 3
         }
@@ -58,12 +66,16 @@
           "description": "Volledig voldoen aan de eisen. $2500",
           "budget": -2500,
           "partij1": "gemeente",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 4
         },
         {
           "id": "L5-E03-B",
           "description": "Alleen minimale aanpassingen doen. $800",
           "budget": -800,
+          "partij1": "investeerders",
+          "waarde1": 2,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -80,12 +92,16 @@
           "description": "Groene binnentuin aanleggen. $2000",
           "budget": -2000,
           "partij1": "bewoners",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 3
         },
         {
           "id": "L5-E04-B",
           "description": "Buitenruimte functioneel houden. $500",
           "budget": -500,
+          "partij1": "investeerders",
+          "waarde1": 2,
           "partij2": "bewoners",
           "waarde2": -2
         }
@@ -102,12 +118,16 @@
           "description": "Ondergrondse parkeergarage bouwen. $3000",
           "budget": -3000,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "bewoners",
+          "waarde2": 2
         },
         {
           "id": "L5-E05-B",
           "description": "Minimaal aantal parkeerplekken. $1000",
           "budget": -1000,
+          "partij1": "bewoners",
+          "waarde1": -2,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -124,12 +144,16 @@
           "description": "Extra teams inzetten om sneller te bouwen. $2000",
           "budget": -2000,
           "partij1": "investeerders",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "bewoners",
+          "waarde2": -3
         },
         {
           "id": "L5-E06-B",
           "description": "Normale planning aanhouden. $0",
           "budget": 0,
+          "partij1": "bewoners",
+          "waarde1": 2,
           "partij2": "investeerders",
           "waarde2": -2
         }
@@ -146,12 +170,16 @@
           "description": "Hogere huren vragen. +$3500",
           "budget": 3500,
           "partij1": "investeerders",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "bewoners",
+          "waarde2": -4
         },
         {
           "id": "L5-E07-B",
           "description": "Huren betaalbaar houden. $1200",
           "budget": -1200,
+          "partij1": "investeerders",
+          "waarde1": -3,
           "partij2": "bewoners",
           "waarde2": 3
         }
@@ -168,12 +196,16 @@
           "description": "Extra maatregelen nemen tegen geluid. $1500",
           "budget": -1500,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "gemeente",
+          "waarde2": 1
         },
         {
           "id": "L5-E08-B",
           "description": "Klachten accepteren. $400",
           "budget": -400,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "bewoners",
           "waarde2": -2
         }
@@ -190,12 +222,16 @@
           "description": "Inspraakmomenten organiseren. $1000",
           "budget": -1000,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "gemeente",
+          "waarde2": 2
         },
         {
           "id": "L5-E09-B",
           "description": "Alleen noodzakelijke updates delen. $300",
           "budget": -300,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "bewoners",
           "waarde2": -2
         }
@@ -212,12 +248,16 @@
           "description": "Extra veiligheidsmaatregelen nemen. $1800",
           "budget": -1800,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "bewoners",
+          "waarde2": 2
         },
         {
           "id": "L5-E10-B",
           "description": "Standaard maatregelen toepassen. $600",
           "budget": -600,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -234,12 +274,16 @@
           "description": "Kwaliteit behouden ondanks kosten. $2000",
           "budget": -2000,
           "partij1": "investeerders",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "bewoners",
+          "waarde2": 2
         },
         {
           "id": "L5-E11-B",
           "description": "Goedkopere alternatieven gebruiken. +$1000",
           "budget": 1000,
+          "partij1": "bewoners",
+          "waarde1": -2,
           "partij2": "investeerders",
           "waarde2": -2
         }
@@ -256,12 +300,16 @@
           "description": "Extra woningen realiseren. +$3000",
           "budget": 3000,
           "partij1": "investeerders",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "gemeente",
+          "waarde2": -2
         },
         {
           "id": "L5-E12-B",
           "description": "Bij het oorspronkelijke plan blijven. $0",
           "budget": 0,
+          "partij1": "investeerders",
+          "waarde1": -1,
           "partij2": "gemeente",
           "waarde2": 1
         }
@@ -278,12 +326,16 @@
           "description": "Uitgebreid onderhoudsplan maken. $1200",
           "budget": -1200,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "investeerders",
+          "waarde2": -1
         },
         {
           "id": "L5-E13-B",
           "description": "Onderhoud later regelen. $0",
           "budget": 0,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -300,12 +352,16 @@
           "description": "Mix van inkomensgroepen stimuleren. $1000",
           "budget": -1000,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "gemeente",
+          "waarde2": 2
         },
         {
           "id": "L5-E14-B",
           "description": "Focus op één doelgroep. +$1500",
           "budget": 1500,
+          "partij1": "bewoners",
+          "waarde1": -2,
           "partij2": "investeerders",
           "waarde2": 2
         }
@@ -322,12 +378,16 @@
           "description": "Alles grondig voorbereiden. $900",
           "budget": -900,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "investeerders",
+          "waarde2": -1
         },
         {
           "id": "L5-E15-B",
           "description": "Minimale voorbereiding. $300",
           "budget": -300,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -344,12 +404,16 @@
           "description": "Extra voorzieningen toevoegen. $1500",
           "budget": -1500,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "investeerders",
+          "waarde2": -1
         },
         {
           "id": "L5-E16-B",
           "description": "Geen extra voorzieningen. $0",
           "budget": 0,
+          "partij1": "bewoners",
+          "waarde1": -2,
           "partij2": "investeerders",
           "waarde2": -1
         }
@@ -366,12 +430,16 @@
           "description": "Collectieve duurzame oplossing. $2500",
           "budget": -2500,
           "partij1": "gemeente",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 4
         },
         {
           "id": "L5-E17-B",
           "description": "Individuele oplossingen per woning. $800",
           "budget": -800,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -1
         }
@@ -388,12 +456,16 @@
           "description": "Officiële oplevering met betrokken partijen. $700",
           "budget": -700,
           "partij1": "bewoners",
-          "waarde1": 1
+          "waarde1": 1,
+          "partij2": "gemeente",
+          "waarde2": 1
         },
         {
           "id": "L5-E18-B",
           "description": "Stil opleveren zonder extra moment. $0",
           "budget": 0,
+          "partij1": "bewoners",
+          "waarde1": -1,
           "partij2": "investeerders",
           "waarde2": 1
         }
@@ -410,12 +482,16 @@
           "description": "Actieve nazorg organiseren. $1000",
           "budget": -1000,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "gemeente",
+          "waarde2": 1
         },
         {
           "id": "L5-E19-B",
           "description": "Nazorg beperken. $200",
           "budget": -200,
+          "partij1": "bewoners",
+          "waarde1": -2,
           "partij2": "investeerders",
           "waarde2": -1
         }
@@ -432,12 +508,16 @@
           "description": "Verkopen voor directe opbrengst. +$4000",
           "budget": 4000,
           "partij1": "investeerders",
-          "waarde1": 3
+          "waarde1": 3,
+          "partij2": "bewoners",
+          "waarde2": -2
         },
         {
           "id": "L5-E20-B",
           "description": "Alles in verhuur houden. $0",
           "budget": 0,
+          "partij1": "bewoners",
+          "waarde1": 1,
           "partij2": "investeerders",
           "waarde2": -1
         }
@@ -454,12 +534,16 @@
           "description": "Open en transparant communiceren. $800",
           "budget": -800,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "bewoners",
+          "waarde2": 1
         },
         {
           "id": "L5-E21-B",
           "description": "Communicatie beperken. $100",
           "budget": -100,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -476,12 +560,16 @@
           "description": "Aanpassingen direct uitvoeren. $900",
           "budget": -900,
           "partij1": "gemeente",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "investeerders",
+          "waarde2": -1
         },
         {
           "id": "L5-E22-B",
           "description": "Later oplossen. $300",
           "budget": -300,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "gemeente",
           "waarde2": -2
         }
@@ -498,12 +586,16 @@
           "description": "Snel reageren en oplossen. $800",
           "budget": -800,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "investeerders",
+          "waarde2": -1
         },
         {
           "id": "L5-E23-B",
           "description": "Beperkt reageren. $200",
           "budget": -200,
+          "partij1": "investeerders",
+          "waarde1": 1,
           "partij2": "bewoners",
           "waarde2": -2
         }
@@ -520,12 +612,16 @@
           "description": "Focus op tevreden partijen. $1000",
           "budget": -1000,
           "partij1": "gemeente",
-          "waarde1": 1
+          "waarde1": 1,
+          "partij2": "bewoners",
+          "waarde2": 2
         },
         {
           "id": "L5-E24-B",
           "description": "Focus op maximaal rendement. +2000",
           "budget": 2000,
+          "partij1": "gemeente",
+          "waarde1": -1,
           "partij2": "investeerders",
           "waarde2": 2
         }
@@ -542,12 +638,16 @@
           "description": "Netjes afronden met aandacht voor alle partijen. $2000",
           "budget": -2000,
           "partij1": "bewoners",
-          "waarde1": 2
+          "waarde1": 2,
+          "partij2": "gemeente",
+          "waarde2": 1
         },
         {
           "id": "L5-E25-B",
           "description": "Zo snel mogelijk afronden. $500",
           "budget": -500,
+          "partij1": "bewoners",
+          "waarde1": -3,
           "partij2": "investeerders",
           "waarde2": 2
         }

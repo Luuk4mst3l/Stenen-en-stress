@@ -1767,7 +1767,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2707,7 +2707,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3148,16 +3148,16 @@ Tilemap:
     m_Data: {fileID: 2734984222330406140, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 4946963429487303862, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -8930725102750587426, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 24
     m_Data: {fileID: 5743340916458537025, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4088431511589742473, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
+    m_Data: {fileID: -8930725102750587426, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
   - m_RefCount: 24
     m_Data: {fileID: 6121683534337745368, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -4088431511589742473, guid: 23d64aac94f0af14e8f450621a49d246, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 197
     m_Data:
@@ -115909,11 +115909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7249009324975982841, guid: ba70dab3cc25317429043af2ecec31a1, type: 3}
       propertyPath: bindings.Array.data[2].startingValue
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249009324975982841, guid: ba70dab3cc25317429043af2ecec31a1, type: 3}
       propertyPath: bindings.Array.data[3].startingValue
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249009324975982841, guid: ba70dab3cc25317429043af2ecec31a1, type: 3}
       propertyPath: bindings.Array.data[0].relationshipUI
