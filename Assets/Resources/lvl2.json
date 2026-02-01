@@ -1,0 +1,267 @@
+{
+  "level": 2,
+  "gebouw": "Rijtjeshuizen",
+  "popupDelaySeconds":5,
+  "events": [
+    {
+      "id": "L2-E01",
+      "titel": "Isolatie",
+      "partij": 0,
+      "description": "Extra isolatie is mogelijk.",
+      "options": [
+        {
+          "id": "L2-E01-A",
+          "description": "Extra isoleren.",
+          "budget": -2500,
+          "partij1": "gemeente",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 4
+        },
+        {
+          "id": "L2-E01-B",
+          "description": "Standaard isolatie.",
+          "budget": -1200,
+          "partij1": "gemeente",
+          "waarde1": -1,
+          "partij2": "groene",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L2-E02",
+      "titel": "Groenstroken",
+      "partij": 1,
+      "description": "Tussen de huizen is ruimte.",
+      "options": [
+        {
+          "id": "L2-E02-A",
+          "description": "Groenstroken aanleggen.",
+          "budget": -2000,
+          "partij1": "gemeente",
+          "waarde1": 2,
+          "partij2": "groene",
+          "waarde2": 4
+        },
+        {
+          "id": "L2-E02-B",
+          "description": "Verharden.",
+          "budget": -900,
+          "partij1": "gemeente",
+          "waarde1": -2,
+          "partij2": "groene",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L2-E03",
+      "titel": "Dak",
+      "partij": 0,
+      "description": "Keuze voor daktype.",
+      "options": [
+        {
+          "id": "L2-E03-A",
+          "description": "Duurzaam dak.",
+          "budget": -1800,
+          "partij1": "gemeente",
+          "waarde1": 2,
+          "partij2": "groene",
+          "waarde2": 3
+        },
+        {
+          "id": "L2-E03-B",
+          "description": "Standaard dak.",
+          "budget": -800,
+          "partij1": "gemeente",
+          "waarde1": -1,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L2-E04",
+      "titel": "Waterafvoer",
+      "partij": 1,
+      "description": "Regenwaterafvoer.",
+      "options": [
+        {
+          "id": "L2-E04-A",
+          "description": "Waterdoorlatend.",
+          "budget": -1500,
+          "partij1": "gemeente",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 3
+        },
+        {
+          "id": "L2-E04-B",
+          "description": "Standaard afvoer.",
+          "budget": -700,
+          "partij1": "gemeente",
+          "waarde1": -1,
+          "partij2": "groene",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L2-E05",
+      "titel": "Parkeren",
+      "partij": 1,
+      "description": "Parkeerdruk in de wijk.",
+      "options": [
+        {
+          "id": "L2-E05-A",
+          "description": "Minder parkeerplekken.",
+          "budget": -1100,
+          "partij1": "gemeente",
+          "waarde1": -1,
+          "partij2": "groene",
+          "waarde2": 2
+        },
+        {
+          "id": "L2-E05-B",
+          "description": "Meer parkeerplekken.",
+          "budget": -900,
+          "partij1": "gemeente",
+          "waarde1": 1,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L2-E06",
+      "titel": "Bouwtempo",
+      "partij": 0,
+      "description": "Tempo vs regels.",
+      "options": [
+        {
+          "id": "L2-E06-A",
+          "description": "Alles volgens regels.",
+          "budget": -1300,
+          "partij1": "gemeente",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 1
+        },
+        {
+          "id": "L2-E06-B",
+          "description": "Sneller werken.",
+          "budget": -600,
+          "partij1": "gemeente",
+          "waarde1": -3,
+          "partij2": "groene",
+          "waarde2": -1
+        }
+      ]
+    },
+    {
+      "id": "L2-E07",
+      "titel": "Afval",
+      "partij": 1,
+      "description": "Bouwafval afvoeren.",
+      "options": [
+        {
+          "id": "L2-E07-A",
+          "description": "Afval scheiden.",
+          "budget": -1000,
+          "partij1": "gemeente",
+          "waarde1": 1,
+          "partij2": "groene",
+          "waarde2": 3
+        },
+        {
+          "id": "L2-E07-B",
+          "description": "Goedkoop afvoeren.",
+          "budget": -400,
+          "partij1": "gemeente",
+          "waarde1": -2,
+          "partij2": "groene",
+          "waarde2": -3
+        }
+      ]
+    },
+    {
+      "id": "L2-E08",
+      "titel": "Bomen",
+      "partij": 1,
+      "description": "Bomen staan in de weg.",
+      "options": [
+        {
+          "id": "L2-E08-A",
+          "description": "Bomen behouden.",
+          "budget": -1600,
+          "partij1": "gemeente",
+          "waarde1": 1,
+          "partij2": "groene",
+          "waarde2": 4
+        },
+        {
+          "id": "L2-E08-B",
+          "description": "Bomen kappen.",
+          "budget": -700,
+          "partij1": "gemeente",
+          "waarde1": -1,
+          "partij2": "groene",
+          "waarde2": -4
+        }
+      ]
+    },
+    {
+      "id": "L2-E09",
+      "titel": "Geluid",
+      "partij": 0,
+      "description": "Klachten uit de buurt.",
+      "options": [
+        {
+          "id": "L2-E09-A",
+          "description": "Geluid beperken.",
+          "budget": -1200,
+          "partij1": "gemeente",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 1
+        },
+        {
+          "id": "L2-E09-B",
+          "description": "Doorgaan.",
+          "budget": -500,
+          "partij1": "gemeente",
+          "waarde1": -3,
+          "partij2": "groene",
+          "waarde2": -2
+        }
+      ]
+    },
+    {
+      "id": "L2-E10",
+      "titel": "Oplevering",
+      "partij": 0,
+      "description": "Afronding van de wijk.",
+      "options": [
+        {
+          "id": "L2-E10-A",
+          "description": "Netjes afronden.",
+          "budget": -1400,
+          "partij1": "gemeente",
+          "waarde1": 3,
+          "partij2": "groene",
+          "waarde2": 1
+        },
+        {
+          "id": "L2-E10-B",
+          "description": "Snel opleveren.",
+          "budget": -600,
+          "partij1": "gemeente",
+          "waarde1": -2,
+          "partij2": "groene",
+          "waarde2": -1
+        }
+      ]
+    }
+  ]
+}

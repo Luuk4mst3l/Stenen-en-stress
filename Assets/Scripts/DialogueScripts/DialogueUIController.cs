@@ -34,6 +34,8 @@ public class DialogueUIController : MonoBehaviour
     [Header("Gameplay Wiring")]
     [SerializeField]
     private StakeholderRelationshipManager relationshipManager;
+    [SerializeField]
+    private PlayerWallet playerWallet;
 
     [Header("Timeout Behaviour")]
     [SerializeField]
@@ -64,6 +66,7 @@ public class DialogueUIController : MonoBehaviour
             if (hideBarWhenNoTimer)
                 timerFillImage.gameObject.SetActive(false);
         }
+        
     }
 
     private void Update()
@@ -151,6 +154,14 @@ public class DialogueUIController : MonoBehaviour
         if (option == null || relationshipManager == null)
             return;
 
+        if (option.budget != 0 && playerWallet != null)
+        {
+            Debug.Log($"Applying budget change: {option.budget}");
+            if (option.budget > 0)
+                playerWallet.Add(option.budget);
+            else
+                playerWallet.Spend(option.budget);
+        }
         relationshipManager.ApplyDelta(option.partij1, option.waarde1);
         relationshipManager.ApplyDelta(option.partij2, option.waarde2);
     }

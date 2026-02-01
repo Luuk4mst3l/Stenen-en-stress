@@ -24,6 +24,7 @@ public class DialogueOption
 {
     public string id;
     public string description;
+    public int budget;
 
     public string partij1;
     public int waarde1;

@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class StakeHolders : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip signalClip;
     [SerializeField]
     private RectTransform target;
 
@@ -39,6 +41,10 @@ public class StakeHolders : MonoBehaviour
     {
         if (IsPulseActive)
             return;
+        
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (audioSource != null && signalClip != null)
+            audioSource.PlayOneShot(signalClip, 1f);
 
         IsNotified = true;
         HasBeenClicked = false;

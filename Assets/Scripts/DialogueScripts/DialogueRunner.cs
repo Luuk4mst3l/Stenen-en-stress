@@ -6,6 +6,9 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField]
     private string resourcePath = "level_1_dialogues";
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip signalClip;
+
     [SerializeField]
     private DialogueUIController ui;
 
@@ -19,6 +22,9 @@ public class DialogueRunner : MonoBehaviour
     private int nextDialogueIndex = 0;
     private bool waitingForChoice;
     private float elapsedTime = 0f;
+    
+    private bool hasNotifiedCurrent = false;
+    private float nextNotifyTime = 0f;
 
     private void Start()
     {
@@ -30,14 +36,31 @@ public class DialogueRunner : MonoBehaviour
         }
 
         gameEventTracker.SetActiveDialogue(data);
+
+        nextNotifyTime = Time.time + initialDialogueDelay;
+        hasNotifiedCurrent = false;
     }
 
     private void FixedUpdate()
     {
-        if (gameEventTracker != null && data != null && !waitingForChoice)
+        if (data == null || gameEventTracker == null)
+            return;
+
+        if (waitingForChoice)
+            return;
+
+        if (nextDialogueIndex >= data.events.Length)
+            return;
+
+        if (hasNotifiedCurrent)
+            return;
+
+        if (Time.time >= nextNotifyTime)
         {
-            elapsedTime += Time.fixedDeltaTime;
-            UpdateDialogueIntervals();
+            int stakeholderIndex = data.events[nextDialogueIndex].partij;
+            gameEventTracker.NotifyStakeholderForDialogue(stakeholderIndex);
+            
+            hasNotifiedCurrent = true;
         }
     }
 
@@ -58,6 +81,10 @@ public class DialogueRunner : MonoBehaviour
     public void SkipDialogueIndex()
     {
         Debug.Log("Skipping dialogue index " + nextDialogueIndex);
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (audioSource != null && signalClip != null)
+             audioSource.PlayOneShot(signalClip, 1f);
+
         nextDialogueIndex++;
     }
 
@@ -75,6 +102,9 @@ public class DialogueRunner : MonoBehaviour
         ui.Hide();
         waitingForChoice = false;
         nextDialogueIndex++;
+
+        hasNotifiedCurrent = false;
+        nextNotifyTime = Time.time + data.popupDelaySeconds;
     }
 
     private void HandleTimedOut()
@@ -82,6 +112,9 @@ public class DialogueRunner : MonoBehaviour
         ui.Hide();
         waitingForChoice = false;
         nextDialogueIndex++;
+
+        hasNotifiedCurrent = false;
+        nextNotifyTime = Time.time + data.popupDelaySeconds;
     }
 
     private void OnDestroy()

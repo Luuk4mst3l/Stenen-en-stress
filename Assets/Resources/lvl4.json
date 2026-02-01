@@ -1,185 +1,186 @@
 {
   "level": 4,
+  "gebouw": "Fabriek",
   "popupDelaySeconds": 15,
   "events": [
     {
       "id": "L4-E01",
-      "titel": "Nieuwe eisen van de gemeente",
-      "description": "De gemeente wil strengere eisen voor duurzaamheid. Dat betekent aanpassen of discussies.",
+      "titel": "Vergunningseisen",
+      "description": "De gemeente stelt extra eisen aan de fabriek.",
       "options": [
-        { "id": "L4-E01-A", "description": "Aanpassen en doorpakken, ook al kost het extra.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
-        { "id": "L4-E01-B", "description": "Proberen te onderhandelen en het kleiner houden.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+        { "id": "L4-E01-A", "description": "Aanpassen aan alle nieuwe eisen.", "budget": -3000, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E01-B", "description": "Zo minimaal mogelijk aanpassen.", "budget": -1000, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E02",
-      "titel": "Goedkoop aanbod voor muren",
-      "description": "Je krijgt een goedkoop aanbod voor muurmaterialen, maar de levertijd is onzeker.",
+      "titel": "Bouwverkeer",
+      "description": "Zwaar bouwverkeer rijdt door de wijk.",
       "options": [
-        { "id": "L4-E02-A", "description": "Pakken, geld besparen en hopen dat het goed komt.", "partij1": "budget", "waarde1": 4, "partij2": "investor", "waarde2": -2 },
-        { "id": "L4-E02-B", "description": "Bij de vaste leverancier blijven voor minder stress.", "partij1": "investor", "waarde1": 3, "partij2": "budget", "waarde2": -2 }
+        { "id": "L4-E02-A", "description": "Andere routes en tijden regelen.", "budget": -1500, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E02-B", "description": "Doorgaan zoals gepland.", "budget": -500, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E03",
-      "titel": "Klacht over bouwverkeer",
-      "description": "Bewoners klagen over zwaar bouwverkeer door de straat.",
+      "titel": "Geluid",
+      "description": "Bewoners klagen over geluidsoverlast.",
       "options": [
-        { "id": "L4-E03-A", "description": "Andere route regelen en tijden beperken.", "partij1": "groene", "waarde1": 2, "partij2": "investor", "waarde2": -2 },
-        { "id": "L4-E03-B", "description": "Doorgaan zoals nu, anders loopt alles uit.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E03-A", "description": "Geluidsbeperkende maatregelen nemen.", "budget": -2000, "partij": "bewoners", "waarde": 3 },
+        { "id": "L4-E03-B", "description": "Klachten voor lief nemen.", "budget": -500, "partij": "bewoners", "waarde": -3 }
       ]
     },
     {
       "id": "L4-E04",
-      "titel": "Tuin: regenwater opvangen",
-      "description": "Je kan de tuin zo maken dat regenwater beter weg kan, maar het is weer extra werk.",
+      "titel": "Werkuren",
+      "description": "De fabriek kan ook ’s avonds doorwerken.",
       "options": [
-        { "id": "L4-E04-A", "description": "Wadi/regenopvang aanleggen.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -3 },
-        { "id": "L4-E04-B", "description": "Simpel houden en standaard afvoer gebruiken.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+        { "id": "L4-E04-A", "description": "Binnen werktijden blijven.", "budget": -1000, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E04-B", "description": "Avonden benutten om sneller klaar te zijn.", "budget": -300, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E05",
-      "titel": "Oprit: extra parkeerdruk",
-      "description": "De buurt vreest dat er straks te weinig parkeerplekken zijn.",
+      "titel": "Uitstoot",
+      "description": "De uitstoot van de fabriek ligt onder een vergrootglas.",
       "options": [
-        { "id": "L4-E05-A", "description": "Meer parkeerplekken maken, ook al gaat dat ten koste van groen.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -3 },
-        { "id": "L4-E05-B", "description": "Vasthouden aan minder auto’s en meer fietsen.", "partij1": "groene", "waarde1": 4, "partij2": "investor", "waarde2": -2 }
+        { "id": "L4-E05-A", "description": "Extra filters installeren.", "budget": -2500, "partij": "gemeente", "waarde": 3 },
+        { "id": "L4-E05-B", "description": "Voldoen aan minimale normen.", "budget": -1000, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E06",
-      "titel": "Planning loopt uit",
-      "description": "Je zit achter op schema. Je kan extra mensen inzetten, maar dat tikt aan.",
+      "titel": "Communicatie",
+      "description": "Hoe ga je om met vragen uit de buurt?",
       "options": [
-        { "id": "L4-E06-A", "description": "Extra ploeg inzetten en tempo maken.", "partij1": "investor", "waarde1": 4, "partij2": "budget", "waarde2": -5 },
-        { "id": "L4-E06-B", "description": "Geen extra kosten, maar accepteer vertraging.", "partij1": "budget", "waarde1": 4, "partij2": "investor", "waarde2": -3 }
+        { "id": "L4-E06-A", "description": "Informatieavond organiseren.", "budget": -1200, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E06-B", "description": "Alleen noodzakelijke informatie delen.", "budget": -400, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E07",
-      "titel": "Ondergrond valt tegen",
-      "description": "Bij het graafwerk blijkt de ondergrond slechter dan verwacht.",
+      "titel": "Veiligheid",
+      "description": "De gemeente controleert de veiligheid op de bouw.",
       "options": [
-        { "id": "L4-E07-A", "description": "Alles verstevigen en het goed doen.", "partij1": "investor", "waarde1": 2, "partij2": "budget", "waarde2": -4 },
-        { "id": "L4-E07-B", "description": "Zo minimaal mogelijk oplossen om geld te besparen.", "partij1": "budget", "waarde1": 4, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E07-A", "description": "Extra veiligheidsmaatregelen nemen.", "budget": -1800, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E07-B", "description": "Standaard controles aanhouden.", "budget": -700, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E08",
-      "titel": "Buren willen hogere schutting",
-      "description": "De buren willen een hogere schutting tegen inkijk. Jij moet het regelen of niet.",
+      "titel": "Stof en rommel",
+      "description": "Stof waait de woonwijk in.",
       "options": [
-        { "id": "L4-E08-A", "description": "Regelen, anders blijft het gezeik.", "partij1": "groene", "waarde1": 2, "partij2": "budget", "waarde2": -2 },
-        { "id": "L4-E08-B", "description": "Niet doen, dat is hun probleem.", "partij1": "budget", "waarde1": 2, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E08-A", "description": "Extra schoonmaak en afscherming.", "budget": -1000, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E08-B", "description": "Geen extra maatregelen.", "budget": -300, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E09",
-      "titel": "Zonnepanelen: standaard of extra",
-      "description": "Je kan zonnepanelen standaard doen of extra plaatsen voor betere score.",
+      "titel": "Toezicht",
+      "description": "De gemeente kan extra toezicht inzetten.",
       "options": [
-        { "id": "L4-E09-A", "description": "Extra panelen plaatsen voor maximale opbrengst.", "partij1": "groene", "waarde1": 5, "partij2": "budget", "waarde2": -5 },
-        { "id": "L4-E09-B", "description": "Standaard pakket, niet overdrijven.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E09-A", "description": "Meewerken aan extra toezicht.", "budget": -900, "partij": "gemeente", "waarde": 1 },
+        { "id": "L4-E09-B", "description": "Beperkt meewerken.", "budget": -300, "partij": "gemeente", "waarde": -1 }
       ]
     },
     {
       "id": "L4-E10",
-      "titel": "Nieuwe investeerder wil 'strakker'",
-      "description": "Een investeerder wil luxere uitstraling, maar jij weet dat dat duur wordt.",
+      "titel": "Verkeersveiligheid",
+      "description": "Er zijn zorgen over verkeersveiligheid rond de fabriek.",
       "options": [
-        { "id": "L4-E10-A", "description": "Meegaan: luxere look om investeerders blij te maken.", "partij1": "investor", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
-        { "id": "L4-E10-B", "description": "Nee zeggen: focus op basics en betaalbaarheid.", "partij1": "budget", "waarde1": 4, "partij2": "investor", "waarde2": -3 }
+        { "id": "L4-E10-A", "description": "Extra verkeersmaatregelen nemen.", "budget": -1400, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E10-B", "description": "Situatie laten zoals het is.", "budget": -400, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E11",
-      "titel": "Tuin: speelplek",
-      "description": "Er komt vraag naar een kleine speelplek. Het kost ruimte en onderhoud.",
+      "titel": "Uitbreiding",
+      "description": "Je kunt de fabriek uitbreiden.",
       "options": [
-        { "id": "L4-E11-A", "description": "Kleine speelplek maken, gezellig voor gezinnen.", "partij1": "investor", "waarde1": 2, "partij2": "groene", "waarde2": -1 },
-        { "id": "L4-E11-B", "description": "Geen speelplek, liever meer groen en rust.", "partij1": "groene", "waarde1": 3, "partij2": "investor", "waarde2": -1 }
+        { "id": "L4-E11-A", "description": "Uitbreiding met extra maatregelen.", "budget": -2200, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E11-B", "description": "Uitbreiden zonder extra aanpassingen.", "budget": -1000, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E12",
-      "titel": "Afval op de bouwplaats",
-      "description": "Er blijft veel bouwafval liggen. Netjes scheiden kost tijd en geld.",
+      "titel": "Nachttransport",
+      "description": "Leveringen kunnen ook ’s nachts plaatsvinden.",
       "options": [
-        { "id": "L4-E12-A", "description": "Afval beter scheiden en opruimen.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -3 },
-        { "id": "L4-E12-B", "description": "Snel weggooien en door.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+        { "id": "L4-E12-A", "description": "Nachttransport beperken.", "budget": -900, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E12-B", "description": "Nachttransport toestaan.", "budget": -300, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E13",
-      "titel": "Oprit: laadpalen of niet",
-      "description": "De vraag naar laadpalen groeit, maar het kost flink wat om nu alles te plaatsen.",
+      "titel": "Controlebezoek",
+      "description": "De gemeente plant een extra controle.",
       "options": [
-        { "id": "L4-E13-A", "description": "Laadpalen plaatsen, klaar voor de toekomst.", "partij1": "groene", "waarde1": 4, "partij2": "budget", "waarde2": -4 },
-        { "id": "L4-E13-B", "description": "Alleen voorbereiden met kabels, later pas plaatsen.", "partij1": "budget", "waarde1": 2, "partij2": "groene", "waarde2": -1 }
+        { "id": "L4-E13-A", "description": "Alles grondig voorbereiden.", "budget": -800, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E13-B", "description": "Alleen minimale voorbereiding.", "budget": -300, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E14",
-      "titel": "Leverancier maakt fout",
-      "description": "Een leverancier levert de verkeerde maat. Je kan terugsturen of het oplossen op locatie.",
+      "titel": "Klachtenafhandeling",
+      "description": "Er komen meerdere klachten binnen.",
       "options": [
-        { "id": "L4-E14-A", "description": "Terugsturen en wachten op de juiste levering.", "partij1": "budget", "waarde1": 2, "partij2": "investor", "waarde2": -3 },
-        { "id": "L4-E14-B", "description": "Op locatie aanpassen om door te kunnen.", "partij1": "investor", "waarde1": 3, "partij2": "budget", "waarde2": -3 }
+        { "id": "L4-E14-A", "description": "Actief klachten oppakken.", "budget": -700, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E14-B", "description": "Reactief handelen.", "budget": -200, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E15",
-      "titel": "Geluidsschermen plaatsen",
-      "description": "De buurt wil minder geluid. Geluidsschermen kosten geld, maar geven rust.",
+      "titel": "Onderhoud terrein",
+      "description": "Het fabrieksterrein moet onderhouden worden.",
       "options": [
-        { "id": "L4-E15-A", "description": "Plaatsen, dan heb je minder klachten.", "partij1": "groene", "waarde1": 2, "partij2": "budget", "waarde2": -2 },
-        { "id": "L4-E15-B", "description": "Niet doen, we hebben al genoeg kosten.", "partij1": "budget", "waarde1": 2, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E15-A", "description": "Regelmatig onderhoud.", "budget": -900, "partij": "gemeente", "waarde": 1 },
+        { "id": "L4-E15-B", "description": "Alleen hoognodig onderhoud.", "budget": -300, "partij": "gemeente", "waarde": -1 }
       ]
     },
     {
       "id": "L4-E16",
-      "titel": "Muren: extra brandveilig",
-      "description": "Je kunt extra brandwerend materiaal gebruiken, maar dat verhoogt de prijs.",
+      "titel": "Opslag buiten",
+      "description": "Materialen liggen buiten opgeslagen.",
       "options": [
-        { "id": "L4-E16-A", "description": "Doen, veiligheid eerst.", "partij1": "groene", "waarde1": 2, "partij2": "budget", "waarde2": -3 },
-        { "id": "L4-E16-B", "description": "Standaard houden om kosten te drukken.", "partij1": "budget", "waarde1": 3, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E16-A", "description": "Opslag afschermen.", "budget": -800, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E16-B", "description": "Zo laten liggen.", "budget": -200, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E17",
-      "titel": "Extra groen langs de weg",
-      "description": "Je kan extra groenstroken langs de weg aanleggen. Ziet er beter uit, maar kost ruimte.",
+      "titel": "Calamiteitenplan",
+      "description": "De gemeente vraagt om een calamiteitenplan.",
       "options": [
-        { "id": "L4-E17-A", "description": "Extra groenstroken aanleggen.", "partij1": "groene", "waarde1": 4, "partij2": "investor", "waarde2": -2 },
-        { "id": "L4-E17-B", "description": "Niet doen, ruimte is te waardevol.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -3 }
+        { "id": "L4-E17-A", "description": "Uitgebreid plan opstellen.", "budget": -1000, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E17-B", "description": "Beperkt plan indienen.", "budget": -400, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E18",
-      "titel": "Bewoners willen inspraak over tuin",
-      "description": "Bewoners willen meepraten over de tuin. Dat kan helpen, maar kost tijd.",
+      "titel": "Eindinspectie",
+      "description": "De fabriek nadert oplevering.",
       "options": [
-        { "id": "L4-E18-A", "description": "Mee laten praten en kleine wensen meenemen.", "partij1": "groene", "waarde1": 3, "partij2": "investor", "waarde2": -2 },
-        { "id": "L4-E18-B", "description": "Zelf beslissen, anders kom je nooit vooruit.", "partij1": "investor", "waarde1": 3, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E18-A", "description": "Extra inspecties laten uitvoeren.", "budget": -1200, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E18-B", "description": "Standaard inspectie.", "budget": -500, "partij": "gemeente", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E19",
-      "titel": "Budgetcontrole",
-      "description": "Je ziet dat het budget sneller opgaat dan gepland. Je moet iets schrappen.",
+      "titel": "Communicatie oplevering",
+      "description": "Hoe kondig je de oplevering aan?",
       "options": [
-        { "id": "L4-E19-A", "description": "Schrappen in luxe afwerking, basis blijft goed.", "partij1": "budget", "waarde1": 4, "partij2": "investor", "waarde2": -2 },
-        { "id": "L4-E19-B", "description": "Schrappen in groene keuzes, sneller binnen budget.", "partij1": "budget", "waarde1": 5, "partij2": "groene", "waarde2": -5 }
+        { "id": "L4-E19-A", "description": "Buurt vooraf informeren.", "budget": -600, "partij": "bewoners", "waarde": 2 },
+        { "id": "L4-E19-B", "description": "Geen extra communicatie.", "budget": -200, "partij": "bewoners", "waarde": -2 }
       ]
     },
     {
       "id": "L4-E20",
-      "titel": "Laatste week: extra check",
-      "description": "Je zit in de laatste fase. Je kan een extra controle doen of gewoon opleveren.",
+      "titel": "Afronding",
+      "description": "De fabriek wordt afgerond.",
       "options": [
-        { "id": "L4-E20-A", "description": "Extra controle en alles netjes afronden.", "partij1": "groene", "waarde1": 3, "partij2": "budget", "waarde2": -2 },
-        { "id": "L4-E20-B", "description": "Opleveren en door naar het volgende project.", "partij1": "investor", "waarde1": 4, "partij2": "groene", "waarde2": -2 }
+        { "id": "L4-E20-A", "description": "Netjes afronden met extra aandacht.", "budget": -1000, "partij": "gemeente", "waarde": 2 },
+        { "id": "L4-E20-B", "description": "Zo snel mogelijk afronden.", "budget": -400, "partij": "gemeente", "waarde": -2 }
       ]
     }
   ]
