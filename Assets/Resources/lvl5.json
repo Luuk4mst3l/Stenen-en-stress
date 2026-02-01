@@ -1,7 +1,7 @@
 {
   "level": 5,
   "gebouw": "Appartementencomplex",
-  "popupDelaySeconds": 10,
+  "popupDelaySeconds": 5,
   "events": [
     {
       "id": "L5-E01",
