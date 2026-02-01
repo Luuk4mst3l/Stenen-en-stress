@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "L4-E01-A",
-          "description": "Aanpassen aan alle nieuwe eisen.",
+          "description": "Aanpassen aan alle nieuwe eisen. $3000",
           "budget": -3000,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -20,7 +20,7 @@
         },
         {
           "id": "L4-E01-B",
-          "description": "Zo minimaal mogelijk aanpassen.",
+          "description": "Zo minimaal mogelijk aanpassen. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": -4,
@@ -37,7 +37,7 @@
       "options": [
         {
           "id": "L4-E02-A",
-          "description": "Andere routes en tijden regelen.",
+          "description": "Andere routes en tijden regelen. $1500",
           "budget": -1500,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -46,7 +46,7 @@
         },
         {
           "id": "L4-E02-B",
-          "description": "Doorgaan zoals gepland.",
+          "description": "Doorgaan zoals gepland. $500",
           "budget": -500,
           "partij1": "bewoner",
           "waarde1": -4,
@@ -63,7 +63,7 @@
       "options": [
         {
           "id": "L4-E03-A",
-          "description": "Geluidsbeperkende maatregelen nemen.",
+          "description": "Geluidsbeperkende maatregelen nemen. $2000",
           "budget": -2000,
           "partij1": "bewoner",
           "waarde1": 5,
@@ -72,7 +72,7 @@
         },
         {
           "id": "L4-E03-B",
-          "description": "Klachten voor lief nemen.",
+          "description": "Klachten voor lief nemen. $500",
           "budget": -500,
           "partij1": "bewoner",
           "waarde1": -5,
@@ -89,7 +89,7 @@
       "options": [
         {
           "id": "L4-E04-A",
-          "description": "Binnen werktijden blijven.",
+          "description": "Binnen werktijden blijven. $1000",
           "budget": -1000,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -98,7 +98,7 @@
         },
         {
           "id": "L4-E04-B",
-          "description": "Avonden benutten om sneller klaar te zijn.",
+          "description": "Avonden benutten om sneller klaar te zijn. $300",
           "budget": -300,
           "partij1": "investeerder",
           "waarde1": 3,
@@ -115,7 +115,7 @@
       "options": [
         {
           "id": "L4-E05-A",
-          "description": "Extra filters installeren.",
+          "description": "Extra filters installeren. $2500",
           "budget": -2500,
           "partij1": "groene",
           "waarde1": 5,
@@ -124,7 +124,7 @@
         },
         {
           "id": "L4-E05-B",
-          "description": "Voldoen aan minimale normen.",
+          "description": "Voldoen aan minimale normen. $1000",
           "budget": -1000,
           "partij1": "groene",
           "waarde1": -4,
@@ -141,7 +141,7 @@
       "options": [
         {
           "id": "L4-E06-A",
-          "description": "Informatieavond organiseren.",
+          "description": "Informatieavond organiseren. $1200",
           "budget": -1200,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -150,7 +150,7 @@
         },
         {
           "id": "L4-E06-B",
-          "description": "Alleen noodzakelijke informatie delen.",
+          "description": "Alleen noodzakelijke informatie delen. $400",
           "budget": -400,
           "partij1": "bewoner",
           "waarde1": -3,
@@ -167,7 +167,7 @@
       "options": [
         {
           "id": "L4-E07-A",
-          "description": "Extra veiligheidsmaatregelen nemen.",
+          "description": "Extra veiligheidsmaatregelen nemen. $1800",
           "budget": -1800,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -176,7 +176,7 @@
         },
         {
           "id": "L4-E07-B",
-          "description": "Standaard controles aanhouden.",
+          "description": "Standaard controles aanhouden. $700",
           "budget": -700,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -193,7 +193,7 @@
       "options": [
         {
           "id": "L4-E08-A",
-          "description": "Extra schoonmaak en afscherming.",
+          "description": "Extra schoonmaak en afscherming. $1000",
           "budget": -1000,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -202,7 +202,7 @@
         },
         {
           "id": "L4-E08-B",
-          "description": "Geen extra maatregelen.",
+          "description": "Geen extra maatregelen. $300",
           "budget": -300,
           "partij1": "bewoner",
           "waarde1": -4,
@@ -219,7 +219,7 @@
       "options": [
         {
           "id": "L4-E09-A",
-          "description": "Meewerken aan extra toezicht.",
+          "description": "Meewerken aan extra toezicht. $900",
           "budget": -900,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -228,7 +228,7 @@
         },
         {
           "id": "L4-E09-B",
-          "description": "Beperkt meewerken.",
+          "description": "Beperkt meewerken. $300",
           "budget": -300,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -245,7 +245,7 @@
       "options": [
         {
           "id": "L4-E10-A",
-          "description": "Extra verkeersmaatregelen nemen.",
+          "description": "Extra verkeersmaatregelen nemen. $1400",
           "budget": -1400,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -254,7 +254,7 @@
         },
         {
           "id": "L4-E10-B",
-          "description": "Situatie laten zoals het is.",
+          "description": "Situatie laten zoals het is. $400",
           "budget": -400,
           "partij1": "bewoner",
           "waarde1": -4,
@@ -271,7 +271,7 @@
       "options": [
         {
           "id": "L4-E11-A",
-          "description": "Uitbreiding met extra maatregelen.",
+          "description": "Uitbreiding met extra maatregelen. $2200",
           "budget": -2200,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -280,7 +280,7 @@
         },
         {
           "id": "L4-E11-B",
-          "description": "Uitbreiden zonder extra aanpassingen.",
+          "description": "Uitbreiden zonder extra aanpassingen. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": -4,
@@ -297,7 +297,7 @@
       "options": [
         {
           "id": "L4-E12-A",
-          "description": "Nachttransport beperken.",
+          "description": "Nachttransport beperken. $900",
           "budget": -900,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -306,7 +306,7 @@
         },
         {
           "id": "L4-E12-B",
-          "description": "Nachttransport toestaan.",
+          "description": "Nachttransport toestaan. $300",
           "budget": -300,
           "partij1": "investeerder",
           "waarde1": 3,
@@ -323,7 +323,7 @@
       "options": [
         {
           "id": "L4-E13-A",
-          "description": "Alles grondig voorbereiden.",
+          "description": "Alles grondig voorbereiden. $800",
           "budget": -800,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -332,7 +332,7 @@
         },
         {
           "id": "L4-E13-B",
-          "description": "Alleen minimale voorbereiding.",
+          "description": "Alleen minimale voorbereiding. $300",
           "budget": -300,
           "partij1": "gemeente",
           "waarde1": -3,
@@ -349,7 +349,7 @@
       "options": [
         {
           "id": "L4-E14-A",
-          "description": "Actief klachten oppakken.",
+          "description": "Actief klachten oppakken. $700",
           "budget": -700,
           "partij1": "bewoner",
           "waarde1": 4,
@@ -358,7 +358,7 @@
         },
         {
           "id": "L4-E14-B",
-          "description": "Reactief handelen.",
+          "description": "Reactief handelen. $200",
           "budget": -200,
           "partij1": "bewoner",
           "waarde1": -3,
@@ -375,7 +375,7 @@
       "options": [
         {
           "id": "L4-E15-A",
-          "description": "Regelmatig onderhoud.",
+          "description": "Regelmatig onderhoud. $900",
           "budget": -900,
           "partij1": "bewoner",
           "waarde1": 3,
@@ -384,7 +384,7 @@
         },
         {
           "id": "L4-E15-B",
-          "description": "Alleen hoognodig onderhoud.",
+          "description": "Alleen hoognodig onderhoud. $300",
           "budget": -300,
           "partij1": "bewoner",
           "waarde1": -3,
@@ -401,7 +401,7 @@
       "options": [
         {
           "id": "L4-E16-A",
-          "description": "Opslag afschermen.",
+          "description": "Opslag afschermen. $800",
           "budget": -800,
           "partij1": "bewoner",
           "waarde1": 3,
@@ -410,7 +410,7 @@
         },
         {
           "id": "L4-E16-B",
-          "description": "Zo laten liggen.",
+          "description": "Zo laten liggen. $200",
           "budget": -200,
           "partij1": "bewoner",
           "waarde1": -3,
@@ -427,7 +427,7 @@
       "options": [
         {
           "id": "L4-E17-A",
-          "description": "Uitgebreid plan opstellen.",
+          "description": "Uitgebreid plan opstellen. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -436,7 +436,7 @@
         },
         {
           "id": "L4-E17-B",
-          "description": "Beperkt plan indienen.",
+          "description": "Beperkt plan indienen. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -3,
@@ -453,7 +453,7 @@
       "options": [
         {
           "id": "L4-E18-A",
-          "description": "Extra inspecties laten uitvoeren.",
+          "description": "Extra inspecties laten uitvoeren. $1200",
           "budget": -1200,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -462,7 +462,7 @@
         },
         {
           "id": "L4-E18-B",
-          "description": "Standaard inspectie.",
+          "description": "Standaard inspectie. $500",
           "budget": -500,
           "partij1": "gemeente",
           "waarde1": -1,
@@ -479,7 +479,7 @@
       "options": [
         {
           "id": "L4-E19-A",
-          "description": "Buurt vooraf informeren.",
+          "description": "Buurt vooraf informeren. $600",
           "budget": -600,
           "partij1": "bewoner",
           "waarde1": 3,
@@ -488,7 +488,7 @@
         },
         {
           "id": "L4-E19-B",
-          "description": "Geen extra communicatie.",
+          "description": "Geen extra communicatie. $200",
           "budget": -200,
           "partij1": "bewoner",
           "waarde1": -2,
@@ -505,7 +505,7 @@
       "options": [
         {
           "id": "L4-E20-A",
-          "description": "Netjes afronden met extra aandacht.",
+          "description": "Netjes afronden met extra aandacht. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -514,7 +514,7 @@
         },
         {
           "id": "L4-E20-B",
-          "description": "Zo snel mogelijk afronden.",
+          "description": "Zo snel mogelijk afronden. $400",
           "budget": -400,
           "partij1": "investeerder",
           "waarde1": 3,
