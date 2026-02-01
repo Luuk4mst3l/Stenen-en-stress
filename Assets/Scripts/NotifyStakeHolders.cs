@@ -6,13 +6,13 @@ public class NotifyStakeholders : MonoBehaviour
     [SerializeField]
     private List<StakeHolders> stakeholders = new List<StakeHolders>();
 
-//     public void NotifyAll()
-//     {
-//         foreach (var stakeholder in stakeholders)
-//         {
-//             stakeholder?.Signal();
-//         }
-//     }
+    //     public void NotifyAll()
+    //     {
+    //         foreach (var stakeholder in stakeholders)
+    //         {
+    //             stakeholder?.Signal();
+    //         }
+    //     }
 
     public void NotifyStakeholder(int index)
     {

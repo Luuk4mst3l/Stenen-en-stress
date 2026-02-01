@@ -34,6 +34,7 @@ public class DialogueUIController : MonoBehaviour
     [Header("Gameplay Wiring")]
     [SerializeField]
     private StakeholderRelationshipManager relationshipManager;
+
     [SerializeField]
     private PlayerWallet playerWallet;
 
@@ -66,7 +67,6 @@ public class DialogueUIController : MonoBehaviour
             if (hideBarWhenNoTimer)
                 timerFillImage.gameObject.SetActive(false);
         }
-        
     }
 
     private void Update()

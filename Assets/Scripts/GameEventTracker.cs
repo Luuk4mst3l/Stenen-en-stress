@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -26,6 +28,15 @@ public class GameEventTracker : MonoBehaviour
     [SerializeField]
     private NotifyStakeholders stakeholderNotifier;
 
+    [SerializeField]
+    private List<RelationshipTrackerUI> relationshipUIs;
+
+    [SerializeField]
+    private PlayerWallet playerWallet;
+
+    [SerializeField]
+    private DialogueRunner dialogueRunner;
+
     private LevelDialogueData activeDialogueData;
 
     private bool isLevelRunning = false;
@@ -38,6 +49,7 @@ public class GameEventTracker : MonoBehaviour
         gameOverPanel.SetActive(false);
         mainBuildingTimer.SetActive(false);
         isLevelRunning = false;
+        Time.timeScale = 0f;
     }
 
     public void StartLevel()
@@ -46,6 +58,7 @@ public class GameEventTracker : MonoBehaviour
         isLevelRunning = true;
         elapsedTime = 0f;
         startPanel.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     void Update()
@@ -104,17 +117,54 @@ public class GameEventTracker : MonoBehaviour
 
     private void EndLevel()
     {
+        TMP_Text GameOverText = gameOverPanel
+            .transform.Find("GameOverText")
+            .GetComponent<TMP_Text>();
+        GameObject restartButton = gameOverPanel.transform.Find("RestartLevelButton").gameObject;
+        GameObject nextLevelButton = gameOverPanel.transform.Find("NextLevelButton").gameObject;
+
         isLevelRunning = false;
         mainBuildingTimer.SetActive(false);
         gameOverPanel.SetActive(true);
         Time.timeScale = 0f;
-        CheckValues();
-        Debug.Log("Level Ended");
+        if (CheckValues())
+        {
+            GameOverText.text = "Level Complete!";
+            nextLevelButton.SetActive(true);
+        }
+        else
+        {
+            GameOverText.text = "Level Failed!";
+            restartButton.SetActive(true);
+        }
     }
 
-    void CheckValues()
+    private bool CheckValues()
     {
-        Debug.Log("Checking values...");
-        // Check voor relationship statuses en bouw requirements
+        int relationships = 0;
+        int goodRelationships = 0;
+        foreach (var relationshipUI in relationshipUIs)
+        {
+            relationships++;
+            if (relationshipUI.GetCurrentValue() >= 0)
+            {
+                goodRelationships++;
+            }
+        }
+        if (dialogueRunner.checkFailedDialogue())
+        {
+            Debug.Log("Level failed due to missing dialogues!");
+            return false;
+        }
+        if (playerWallet.Money >= 0 && goodRelationships >= relationships)
+        {
+            Debug.Log("Level Successful!");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Level Failed! Keep your relationships and money positive.");
+            return false;
+        }
     }
 }

@@ -26,10 +26,6 @@ public class PlayerWallet : MonoBehaviour
 
     public bool Spend(int amount)
     {
-        Debug.Log($"Attempting to spend {amount}. Current balance: {Money}");
-
-        Debug.Log($"Spending money... {Money}");
-
         Money += amount;
         OnMoneyChanged?.Invoke(Money);
         return true;

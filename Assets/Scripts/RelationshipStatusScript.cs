@@ -49,6 +49,7 @@ public class RelationshipTrackerUI : MonoBehaviour
             1f - Mathf.Exp(-smoothSpeed * Time.unscaledDeltaTime)
         );
         UpdateHeartInstant(next);
+        GetCurrentValue();
     }
 
     public void SetRelationship(float value)
@@ -78,5 +79,10 @@ public class RelationshipTrackerUI : MonoBehaviour
         float t = Mathf.Clamp01(heartLen / lineLen);
 
         return Mathf.Lerp(minValue, maxValue, t);
+    }
+
+    public float GetCurrentValue()
+    {
+        return targetValue;
     }
 }

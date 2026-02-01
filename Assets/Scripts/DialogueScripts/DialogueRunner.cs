@@ -6,8 +6,11 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField]
     private string resourcePath = "level_1_dialogues";
 
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip signalClip;
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip signalClip;
 
     [SerializeField]
     private DialogueUIController ui;
@@ -22,9 +25,11 @@ public class DialogueRunner : MonoBehaviour
     private int nextDialogueIndex = 0;
     private bool waitingForChoice;
     private float elapsedTime = 0f;
-    
+
     private bool hasNotifiedCurrent = false;
     private float nextNotifyTime = 0f;
+    private int totalDialogues;
+    private int passedDialogues;
 
     private void Start()
     {
@@ -36,6 +41,8 @@ public class DialogueRunner : MonoBehaviour
         }
 
         gameEventTracker.SetActiveDialogue(data);
+        totalDialogues = data.events.Length;
+        passedDialogues = 0;
 
         nextNotifyTime = Time.time + initialDialogueDelay;
         hasNotifiedCurrent = false;
@@ -59,8 +66,20 @@ public class DialogueRunner : MonoBehaviour
         {
             int stakeholderIndex = data.events[nextDialogueIndex].partij;
             gameEventTracker.NotifyStakeholderForDialogue(stakeholderIndex);
-            
+
             hasNotifiedCurrent = true;
+        }
+    }
+
+    public bool checkFailedDialogue()
+    {
+        if (passedDialogues < totalDialogues)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
@@ -81,9 +100,13 @@ public class DialogueRunner : MonoBehaviour
     public void SkipDialogueIndex()
     {
         Debug.Log("Skipping dialogue index " + nextDialogueIndex);
-        if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
         if (audioSource != null && signalClip != null)
-             audioSource.PlayOneShot(signalClip, 1f);
+            audioSource.PlayOneShot(signalClip, 1f);
+
+        hasNotifiedCurrent = false;
+        nextNotifyTime = Time.time + data.popupDelaySeconds;
 
         nextDialogueIndex++;
     }
@@ -102,6 +125,7 @@ public class DialogueRunner : MonoBehaviour
         ui.Hide();
         waitingForChoice = false;
         nextDialogueIndex++;
+        passedDialogues++;
 
         hasNotifiedCurrent = false;
         nextNotifyTime = Time.time + data.popupDelaySeconds;
