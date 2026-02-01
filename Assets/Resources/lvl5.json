@@ -1,7 +1,7 @@
 {
   "level": 5,
   "gebouw": "Appartementencomplex",
-  "popupDelaySeconds": 10,
+  "popupDelaySeconds": 5,
   "events": [
     {
       "id": "L5-E01",
@@ -9,256 +9,548 @@
       "partij": 3,
       "description": "Het project groeit uit tot één of twee grote complexen.",
       "options": [
-        { "id": "L5-E01-A", 
-          "description": "Twee complexen bouwen voor maximale opbrengst.", 
-          "budget": 4000, 
-          "partij1": "investeerders", 
-          "waarde1": 3 },
-        { "id": "L5-E01-B", 
-          "description": "Eén complex bouwen met meer ruimte per woning.", 
-          "budget": -1500, 
-          "partij2": "bewoners", 
-          "waarde2": 2 }
+        {
+          "id": "L5-E01-A",
+          "description": "Twee complexen bouwen voor maximale opbrengst. +$4000",
+          "budget": 4000,
+          "partij1": "investeerders",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E01-B",
+          "description": "Eén complex bouwen met meer ruimte per woning. $1500",
+          "budget": -1500,
+          "partij2": "bewoners",
+          "waarde2": 2
+        }
       ]
     },
     {
       "id": "L5-E02",
       "titel": "Woningtype",
-      "partij":3,
+      "partij": 3,
       "description": "Je bepaalt het type woningen.",
       "options": [
-        { "id": "L5-E02-A", "description": "Luxe appartementen realiseren.", "budget": 3000, "partij1": "investeerders", "waarde1": 3 },
-        { "id": "L5-E02-B", "description": "Betaalbare woningen bouwen.", "budget": -1000, "partij2": "bewoners", "waarde2": 3 }
+        {
+          "id": "L5-E02-A",
+          "description": "Luxe appartementen realiseren. +$3000",
+          "budget": 3000,
+          "partij1": "investeerders",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E02-B",
+          "description": "Betaalbare woningen bouwen. $1000",
+          "budget": -1000,
+          "partij2": "bewoners",
+          "waarde2": 3
+        }
       ]
     },
     {
       "id": "L5-E03",
       "titel": "Duurzaamheidseisen",
-      "partij":0,
+      "partij": 0,
       "description": "De gemeente stelt extra duurzaamheidseisen.",
       "options": [
-        { "id": "L5-E03-A", "description": "Volledig voldoen aan de eisen.", "budget": -2500, "partij1": "gemeente", "waarde1": 3 },
-        { "id": "L5-E03-B", "description": "Alleen minimale aanpassingen doen.", "budget": -800, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E03-A",
+          "description": "Volledig voldoen aan de eisen. $2500",
+          "budget": -2500,
+          "partij1": "gemeente",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E03-B",
+          "description": "Alleen minimale aanpassingen doen. $800",
+          "budget": -800,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E04",
       "titel": "Groene buitenruimte",
-      "partij":1,
+      "partij": 1,
       "description": "De inrichting van de buitenruimte ligt onder een vergrootglas.",
       "options": [
-        { "id": "L5-E04-A", "description": "Groene binnentuin aanleggen.", "budget": -2000, "partij1": "bewoners", "waarde1": 3 },
-        { "id": "L5-E04-B", "description": "Buitenruimte functioneel houden.", "budget": -500, "partij2": "bewoners", "waarde2": -2 }
+        {
+          "id": "L5-E04-A",
+          "description": "Groene binnentuin aanleggen. $2000",
+          "budget": -2000,
+          "partij1": "bewoners",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E04-B",
+          "description": "Buitenruimte functioneel houden. $500",
+          "budget": -500,
+          "partij2": "bewoners",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E05",
       "titel": "Parkeren",
-      "partij":2,
+      "partij": 2,
       "description": "Parkeerdruk wordt een belangrijk thema.",
       "options": [
-        { "id": "L5-E05-A", "description": "Ondergrondse parkeergarage bouwen.", "budget": -3000, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E05-B", "description": "Minimaal aantal parkeerplekken.", "budget": -1000, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E05-A",
+          "description": "Ondergrondse parkeergarage bouwen. $3000",
+          "budget": -3000,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E05-B",
+          "description": "Minimaal aantal parkeerplekken. $1000",
+          "budget": -1000,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E06",
       "titel": "Bouwtempo",
-      "partij":3,
+      "partij": 3,
       "description": "Investeerders willen tempo maken.",
       "options": [
-        { "id": "L5-E06-A", "description": "Extra teams inzetten om sneller te bouwen.", "budget": -2000, "partij1": "investeerders", "waarde1": 2 },
-        { "id": "L5-E06-B", "description": "Normale planning aanhouden.", "budget": 0, "partij2": "investeerders", "waarde2": -2 }
+        {
+          "id": "L5-E06-A",
+          "description": "Extra teams inzetten om sneller te bouwen. $2000",
+          "budget": -2000,
+          "partij1": "investeerders",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E06-B",
+          "description": "Normale planning aanhouden. $0",
+          "budget": 0,
+          "partij2": "investeerders",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E07",
       "titel": "Huurprijsbeleid",
-      "partij":3,
+      "partij": 3,
       "description": "Je bepaalt de strategie voor verhuur.",
       "options": [
-        { "id": "L5-E07-A", "description": "Hogere huren vragen.", "budget": 3500, "partij1": "investeerders", "waarde1": 3 },
-        { "id": "L5-E07-B", "description": "Huren betaalbaar houden.", "budget": -1200, "partij2": "bewoners", "waarde2": 3 }
+        {
+          "id": "L5-E07-A",
+          "description": "Hogere huren vragen. +$3500",
+          "budget": 3500,
+          "partij1": "investeerders",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E07-B",
+          "description": "Huren betaalbaar houden. $1200",
+          "budget": -1200,
+          "partij2": "bewoners",
+          "waarde2": 3
+        }
       ]
     },
     {
       "id": "L5-E08",
       "titel": "Geluidsoverlast",
-      "partij":2,
+      "partij": 2,
       "description": "De bouw veroorzaakt langdurige overlast.",
       "options": [
-        { "id": "L5-E08-A", "description": "Extra maatregelen nemen tegen geluid.", "budget": -1500, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E08-B", "description": "Klachten accepteren.", "budget": -400, "partij2": "bewoners", "waarde2": -2 }
+        {
+          "id": "L5-E08-A",
+          "description": "Extra maatregelen nemen tegen geluid. $1500",
+          "budget": -1500,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E08-B",
+          "description": "Klachten accepteren. $400",
+          "budget": -400,
+          "partij2": "bewoners",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E09",
       "titel": "Communicatie met buurt",
-      "partij":2,
+      "partij": 2,
       "description": "De buurt wil meer betrokken worden.",
       "options": [
-        { "id": "L5-E09-A", "description": "Inspraakmomenten organiseren.", "budget": -1000, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E09-B", "description": "Alleen noodzakelijke updates delen.", "budget": -300, "partij2": "bewoners", "waarde2": -2 }
+        {
+          "id": "L5-E09-A",
+          "description": "Inspraakmomenten organiseren. $1000",
+          "budget": -1000,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E09-B",
+          "description": "Alleen noodzakelijke updates delen. $300",
+          "budget": -300,
+          "partij2": "bewoners",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E10",
       "titel": "Veiligheid",
-      "partij":0,
+      "partij": 0,
       "description": "De gemeente kijkt scherp naar veiligheid.",
       "options": [
-        { "id": "L5-E10-A", "description": "Extra veiligheidsmaatregelen nemen.", "budget": -1800, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E10-B", "description": "Standaard maatregelen toepassen.", "budget": -600, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E10-A",
+          "description": "Extra veiligheidsmaatregelen nemen. $1800",
+          "budget": -1800,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E10-B",
+          "description": "Standaard maatregelen toepassen. $600",
+          "budget": -600,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E11",
       "titel": "Materialen",
-      "partij":3,
+      "partij": 3,
       "description": "Prijzen van materialen stijgen.",
       "options": [
-        { "id": "L5-E11-A", "description": "Kwaliteit behouden ondanks kosten.", "budget": -2000, "partij1": "investeerders", "waarde1": 2 },
-        { "id": "L5-E11-B", "description": "Goedkopere alternatieven gebruiken.", "budget": 1000, "partij2": "investeerders", "waarde2": -2 }
+        {
+          "id": "L5-E11-A",
+          "description": "Kwaliteit behouden ondanks kosten. $2000",
+          "budget": -2000,
+          "partij1": "investeerders",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E11-B",
+          "description": "Goedkopere alternatieven gebruiken. +$1000",
+          "budget": 1000,
+          "partij2": "investeerders",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E12",
       "titel": "Extra woningen",
-      "partij":0,
+      "partij": 0,
       "description": "Je kunt extra woningen toevoegen.",
       "options": [
-        { "id": "L5-E12-A", "description": "Extra woningen realiseren.", "budget": 3000, "partij1": "investeerders", "waarde1": 3 },
-        { "id": "L5-E12-B", "description": "Bij het oorspronkelijke plan blijven.", "budget": 0, "partij2": "gemeente", "waarde2": 1 }
+        {
+          "id": "L5-E12-A",
+          "description": "Extra woningen realiseren. +$3000",
+          "budget": 3000,
+          "partij1": "investeerders",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E12-B",
+          "description": "Bij het oorspronkelijke plan blijven. $0",
+          "budget": 0,
+          "partij2": "gemeente",
+          "waarde2": 1
+        }
       ]
     },
     {
       "id": "L5-E13",
       "titel": "Onderhoudsplan",
-      "partij":0,
+      "partij": 0,
       "description": "Langetermijnonderhoud wordt besproken.",
       "options": [
-        { "id": "L5-E13-A", "description": "Uitgebreid onderhoudsplan maken.", "budget": -1200, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E13-B", "description": "Onderhoud later regelen.", "budget": 0, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E13-A",
+          "description": "Uitgebreid onderhoudsplan maken. $1200",
+          "budget": -1200,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E13-B",
+          "description": "Onderhoud later regelen. $0",
+          "budget": 0,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E14",
       "titel": "Sociale mix",
-      "partij":3,
+      "partij": 3,
       "description": "De samenstelling van bewoners staat ter discussie.",
       "options": [
-        { "id": "L5-E14-A", "description": "Mix van inkomensgroepen stimuleren.", "budget": -1000, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E14-B", "description": "Focus op één doelgroep.", "budget": 1500, "partij2": "investeerders", "waarde2": 2 }
+        {
+          "id": "L5-E14-A",
+          "description": "Mix van inkomensgroepen stimuleren. $1000",
+          "budget": -1000,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E14-B",
+          "description": "Focus op één doelgroep. +$1500",
+          "budget": 1500,
+          "partij2": "investeerders",
+          "waarde2": 2
+        }
       ]
     },
     {
       "id": "L5-E15",
       "titel": "Extra inspectie",
-      "partij":0,
+      "partij": 0,
       "description": "De gemeente kondigt een extra inspectie aan.",
       "options": [
-        { "id": "L5-E15-A", "description": "Alles grondig voorbereiden.", "budget": -900, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E15-B", "description": "Minimale voorbereiding.", "budget": -300, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E15-A",
+          "description": "Alles grondig voorbereiden. $900",
+          "budget": -900,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E15-B",
+          "description": "Minimale voorbereiding. $300",
+          "budget": -300,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E16",
       "titel": "Voorzieningen",
-      "partij":3,
+      "partij": 3,
       "description": "Extra voorzieningen maken het complex aantrekkelijker.",
       "options": [
-        { "id": "L5-E16-A", "description": "Extra voorzieningen toevoegen.", "budget": -1500, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E16-B", "description": "Geen extra voorzieningen.", "budget": 0, "partij2": "investeerders", "waarde2": -1 }
+        {
+          "id": "L5-E16-A",
+          "description": "Extra voorzieningen toevoegen. $1500",
+          "budget": -1500,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E16-B",
+          "description": "Geen extra voorzieningen. $0",
+          "budget": 0,
+          "partij2": "investeerders",
+          "waarde2": -1
+        }
       ]
     },
     {
       "id": "L5-E17",
       "titel": "Energievoorziening",
-      "partij":0,
+      "partij": 0,
       "description": "De energieoplossing wordt gekozen.",
       "options": [
-        { "id": "L5-E17-A", "description": "Collectieve duurzame oplossing.", "budget": -2500, "partij1": "gemeente", "waarde1": 3 },
-        { "id": "L5-E17-B", "description": "Individuele oplossingen per woning.", "budget": -800, "partij2": "gemeente", "waarde2": -1 }
+        {
+          "id": "L5-E17-A",
+          "description": "Collectieve duurzame oplossing. $2500",
+          "budget": -2500,
+          "partij1": "gemeente",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E17-B",
+          "description": "Individuele oplossingen per woning. $800",
+          "budget": -800,
+          "partij2": "gemeente",
+          "waarde2": -1
+        }
       ]
     },
     {
       "id": "L5-E18",
       "titel": "Oplevermoment",
-      "partij":3,
+      "partij": 3,
       "description": "Hoe presenteer je het eindresultaat?",
       "options": [
-        { "id": "L5-E18-A", "description": "Officiële oplevering met betrokken partijen.", "budget": -700, "partij1": "bewoners", "waarde1": 1 },
-        { "id": "L5-E18-B", "description": "Stil opleveren zonder extra moment.", "budget": 0, "partij2": "investeerders", "waarde2": 1 }
+        {
+          "id": "L5-E18-A",
+          "description": "Officiële oplevering met betrokken partijen. $700",
+          "budget": -700,
+          "partij1": "bewoners",
+          "waarde1": 1
+        },
+        {
+          "id": "L5-E18-B",
+          "description": "Stil opleveren zonder extra moment. $0",
+          "budget": 0,
+          "partij2": "investeerders",
+          "waarde2": 1
+        }
       ]
     },
     {
       "id": "L5-E19",
       "titel": "Nazorg",
-      "partij":2,
+      "partij": 2,
       "description": "Na oplevering blijven er vragen.",
       "options": [
-        { "id": "L5-E19-A", "description": "Actieve nazorg organiseren.", "budget": -1000, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E19-B", "description": "Nazorg beperken.", "budget": 0, "partij2": "investeerders", "waarde2": -1 }
+        {
+          "id": "L5-E19-A",
+          "description": "Actieve nazorg organiseren. $1000",
+          "budget": -1000,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E19-B",
+          "description": "Nazorg beperken. $200",
+          "budget": -200,
+          "partij2": "investeerders",
+          "waarde2": -1
+        }
       ]
     },
     {
       "id": "L5-E20",
       "titel": "Verkoopstrategie",
-      "partij":3,
+      "partij": 3,
       "description": "Een deel van de woningen kan verkocht worden.",
       "options": [
-        { "id": "L5-E20-A", "description": "Verkopen voor directe opbrengst.", "budget": 4000, "partij1": "investeerders", "waarde1": 3 },
-        { "id": "L5-E20-B", "description": "Alles in verhuur houden.", "budget": 0, "partij2": "investeerders", "waarde2": -1 }
+        {
+          "id": "L5-E20-A",
+          "description": "Verkopen voor directe opbrengst. +$4000",
+          "budget": 4000,
+          "partij1": "investeerders",
+          "waarde1": 3
+        },
+        {
+          "id": "L5-E20-B",
+          "description": "Alles in verhuur houden. $0",
+          "budget": 0,
+          "partij2": "investeerders",
+          "waarde2": -1
+        }
       ]
     },
     {
       "id": "L5-E21",
       "titel": "Imago",
-      "partij":0,
+      "partij": 0,
       "description": "Het project krijgt veel media-aandacht.",
       "options": [
-        { "id": "L5-E21-A", "description": "Open en transparant communiceren.", "budget": -800, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E21-B", "description": "Communicatie beperken.", "budget": 0, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E21-A",
+          "description": "Open en transparant communiceren. $800",
+          "budget": -800,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E21-B",
+          "description": "Communicatie beperken. $100",
+          "budget": -100,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E22",
       "titel": "Aanpassingen na inspectie",
-      "partij":0,
+      "partij": 0,
       "description": "Na inspectie zijn kleine aanpassingen nodig.",
       "options": [
-        { "id": "L5-E22-A", "description": "Aanpassingen direct uitvoeren.", "budget": -900, "partij1": "gemeente", "waarde1": 2 },
-        { "id": "L5-E22-B", "description": "Later oplossen.", "budget": -300, "partij2": "gemeente", "waarde2": -2 }
+        {
+          "id": "L5-E22-A",
+          "description": "Aanpassingen direct uitvoeren. $900",
+          "budget": -900,
+          "partij1": "gemeente",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E22-B",
+          "description": "Later oplossen. $300",
+          "budget": -300,
+          "partij2": "gemeente",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E23",
       "titel": "Bewonersklachten",
-      "partij":2,
+      "partij": 2,
       "description": "Na intrek ontstaan klachten.",
       "options": [
-        { "id": "L5-E23-A", "description": "Snel reageren en oplossen.", "budget": -800, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E23-B", "description": "Beperkt reageren.", "budget": -200, "partij2": "bewoners", "waarde2": -2 }
+        {
+          "id": "L5-E23-A",
+          "description": "Snel reageren en oplossen. $800",
+          "budget": -800,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E23-B",
+          "description": "Beperkt reageren. $200",
+          "budget": -200,
+          "partij2": "bewoners",
+          "waarde2": -2
+        }
       ]
     },
     {
       "id": "L5-E24",
       "titel": "Eindbalans",
-      "partij":0,
+      "partij": 0,
       "description": "Je maakt de eindbalans op.",
       "options": [
-        { "id": "L5-E24-A", "description": "Focus op tevreden partijen.", "budget": -500, "partij1": "gemeente", "waarde1": 1 },
-        { "id": "L5-E24-B", "description": "Focus op maximaal rendement.", "budget": 2000, "partij2": "investeerders", "waarde2": 2 }
+        {
+          "id": "L5-E24-A",
+          "description": "Focus op tevreden partijen. $1000",
+          "budget": -1000,
+          "partij1": "gemeente",
+          "waarde1": 1
+        },
+        {
+          "id": "L5-E24-B",
+          "description": "Focus op maximaal rendement. +2000",
+          "budget": 2000,
+          "partij2": "investeerders",
+          "waarde2": 2
+        }
       ]
     },
     {
       "id": "L5-E25",
       "titel": "Afronding project",
-      "partij":3,
+      "partij": 3,
       "description": "Het project wordt definitief afgerond.",
       "options": [
-        { "id": "L5-E25-A", "description": "Netjes afronden met aandacht voor alle partijen.", "budget": -1000, "partij1": "bewoners", "waarde1": 2 },
-        { "id": "L5-E25-B", "description": "Zo snel mogelijk afronden.", "budget": 1500, "partij2": "investeerders", "waarde2": 2 }
+        {
+          "id": "L5-E25-A",
+          "description": "Netjes afronden met aandacht voor alle partijen. $2000",
+          "budget": -2000,
+          "partij1": "bewoners",
+          "waarde1": 2
+        },
+        {
+          "id": "L5-E25-B",
+          "description": "Zo snel mogelijk afronden. $500",
+          "budget": -500,
+          "partij2": "investeerders",
+          "waarde2": 2
+        }
       ]
     }
   ]

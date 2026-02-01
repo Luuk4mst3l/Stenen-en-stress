@@ -11,7 +11,7 @@
       "options": [
         {
           "id": "L2-E01-A",
-          "description": "Extra isoleren.",
+          "description": "Extra isoleren. $1500",
           "budget": -1500,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -20,7 +20,7 @@
         },
         {
           "id": "L2-E01-B",
-          "description": "Standaard isolatie.",
+          "description": "Standaard isolatie. $700",
           "budget": -700,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -37,7 +37,7 @@
       "options": [
         {
           "id": "L2-E02-A",
-          "description": "Groenstroken aanleggen.",
+          "description": "Groenstroken aanleggen. $1200",
           "budget": -1200,
           "partij1": "gemeente",
           "waarde1": 2,
@@ -46,7 +46,7 @@
         },
         {
           "id": "L2-E02-B",
-          "description": "Verharden.",
+          "description": "Verharden. $500",
           "budget": -500,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -63,7 +63,7 @@
       "options": [
         {
           "id": "L2-E03-A",
-          "description": "Duurzaam dak.",
+          "description": "Duurzaam dak. $1100",
           "budget": -1100,
           "partij1": "gemeente",
           "waarde1": 2,
@@ -72,7 +72,7 @@
         },
         {
           "id": "L2-E03-B",
-          "description": "Standaard dak.",
+          "description": "Standaard dak. $500",
           "budget": -500,
           "partij1": "gemeente",
           "waarde1": -1,
@@ -89,7 +89,7 @@
       "options": [
         {
           "id": "L2-E04-A",
-          "description": "Waterdoorlatend.",
+          "description": "Waterdoorlatend. $900",
           "budget": -900,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -98,7 +98,7 @@
         },
         {
           "id": "L2-E04-B",
-          "description": "Standaard afvoer.",
+          "description": "Standaard afvoer. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -115,7 +115,7 @@
       "options": [
         {
           "id": "L2-E05-A",
-          "description": "Minder parkeerplekken.",
+          "description": "Minder parkeerplekken. $700",
           "budget": -700,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -124,7 +124,7 @@
         },
         {
           "id": "L2-E05-B",
-          "description": "Meer parkeerplekken.",
+          "description": "Meer parkeerplekken. $500",
           "budget": -500,
           "partij1": "gemeente",
           "waarde1": 2,
@@ -141,7 +141,7 @@
       "options": [
         {
           "id": "L2-E06-A",
-          "description": "Alles volgens regels.",
+          "description": "Alles volgens regels. $800",
           "budget": -800,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -150,7 +150,7 @@
         },
         {
           "id": "L2-E06-B",
-          "description": "Sneller werken.",
+          "description": "Sneller werken. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -4,
@@ -163,11 +163,11 @@
       "id": "L2-E07",
       "titel": "Afval",
       "partij": 1,
-      "description": "Bouwafval afvoeren.",
+      "description": "Bouwafval afvoeren. ",
       "options": [
         {
           "id": "L2-E07-A",
-          "description": "Afval scheiden.",
+          "description": "Afval scheiden. $600",
           "budget": -600,
           "partij1": "gemeente",
           "waarde1": 1,
@@ -176,7 +176,7 @@
         },
         {
           "id": "L2-E07-B",
-          "description": "Goedkoop afvoeren.",
+          "description": "Goedkoop afvoeren. $200",
           "budget": -200,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -193,7 +193,7 @@
       "options": [
         {
           "id": "L2-E08-A",
-          "description": "Bomen behouden.",
+          "description": "Bomen behouden. $1000",
           "budget": -1000,
           "partij1": "gemeente",
           "waarde1": 1,
@@ -202,7 +202,7 @@
         },
         {
           "id": "L2-E08-B",
-          "description": "Bomen kappen.",
+          "description": "Bomen kappen. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -2,
@@ -219,7 +219,7 @@
       "options": [
         {
           "id": "L2-E09-A",
-          "description": "Geluid beperken.",
+          "description": "Geluid beperken. $700",
           "budget": -700,
           "partij1": "gemeente",
           "waarde1": 4,
@@ -228,7 +228,7 @@
         },
         {
           "id": "L2-E09-B",
-          "description": "Doorgaan.",
+          "description": "Doorgaan. $300",
           "budget": -300,
           "partij1": "gemeente",
           "waarde1": -4,
@@ -245,7 +245,7 @@
       "options": [
         {
           "id": "L2-E10-A",
-          "description": "Netjes afronden.",
+          "description": "Netjes afronden. $800",
           "budget": -800,
           "partij1": "gemeente",
           "waarde1": 3,
@@ -254,7 +254,7 @@
         },
         {
           "id": "L2-E10-B",
-          "description": "Snel opleveren.",
+          "description": "Snel opleveren. $400",
           "budget": -400,
           "partij1": "gemeente",
           "waarde1": -3,
