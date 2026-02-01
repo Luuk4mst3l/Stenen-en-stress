@@ -18794,7 +18794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beef4d2281448714381b42e550835b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWallet
-  startingMoney: 15000
+  startingMoney: 8000
 --- !u!1 &1222487022
 GameObject:
   m_ObjectHideFlags: 0
@@ -21438,6 +21438,10 @@ PrefabInstance:
       propertyPath: relationshipManager
       value: 
       objectReference: {fileID: 352515510}
+    - target: {fileID: 7687683561164729925, guid: ba70dab3cc25317429043af2ecec31a1, type: 3}
+      propertyPath: autoPickFirstOptionOnTimeout
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7993174049260419458, guid: ba70dab3cc25317429043af2ecec31a1, type: 3}
       propertyPath: m_Name
       value: Panel

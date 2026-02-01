@@ -26,7 +26,7 @@ public class DialogueUIController : MonoBehaviour
 
     [Header("Timer Bar (top image)")]
     [SerializeField]
-    private Image timerFillImage; // top image
+    private Image timerFillImage;
 
     [SerializeField]
     private bool hideBarWhenNoTimer = true;
@@ -39,7 +39,7 @@ public class DialogueUIController : MonoBehaviour
 
     [Header("Timeout Behaviour")]
     [SerializeField]
-    private bool autoPickFirstOptionOnTimeout = false;
+    private bool autoPickFirstOptionOnTimeout = true;
 
     public event Action<DialogueOption> OnOptionSelected;
     public event Action OnTimedOut;
@@ -145,7 +145,7 @@ public class DialogueUIController : MonoBehaviour
             StopTimer();
             ApplyOptionEffects(option);
             OnOptionSelected?.Invoke(option);
-            Hide(); // popup weg
+            Hide();
         });
     }
 
